@@ -190,6 +190,21 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
     background:#111110;
     border-radius:3px;
     margin:0 1rem;
+    padding:2px;
+    background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);
+    background-size:300% 100%;
+    animation:borderShimmer 5s linear infinite;
+  }}
+  @keyframes borderShimmer{{
+    0%{{background-position:0% 0;}}
+    100%{{background-position:300% 0;}}
+  }}
+  .image-zone .img-inner{{
+    position:relative;
+    overflow:hidden;
+    background:#111110;
+    border-radius:2px;
+    height:100%;
   }}
   .image-zone img.main-img{{
     width:100%;
@@ -332,6 +347,7 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
 <div class="card">
 
   <div class="image-zone">
+    <div class="img-inner">
     <div class="image-loading" id="loader">
       <svg class="leaf-anim" width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#5a9a6a" stroke-width="1.2">
         <path d="M24 44 C24 44 24 18 24 13 C24 4 35 1 42 7 C42 7 31 13 28 23"/>
@@ -346,6 +362,7 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
     <div class="img-overlay"></div>
     <div class="image-badge">{city} · {country}</div>
     <img class="watermark" src="{wm_url}" alt="Florae"/>
+    </div>
   </div>
 
   <div class="shimmer-line"></div>
