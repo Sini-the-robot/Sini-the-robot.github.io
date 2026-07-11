@@ -186,18 +186,16 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
   /* IMAGE */
   .image-zone{{
     position:relative;
-    overflow:hidden;
-    background:#111110;
-    border-radius:3px;
+    border-radius:4px;
     margin:0 1rem;
-    padding:2px;
-    background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);
-    background-size:300% 100%;
-    animation:borderShimmer 5s linear infinite;
+    padding:3px;
+    background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#5a9a6a,#2d5a3d);
+    background-size:400% 100%;
+    animation:borderShimmer 6s linear infinite;
   }}
   @keyframes borderShimmer{{
     0%{{background-position:0% 0;}}
-    100%{{background-position:300% 0;}}
+    100%{{background-position:400% 0;}}
   }}
   .image-zone .img-inner{{
     position:relative;
