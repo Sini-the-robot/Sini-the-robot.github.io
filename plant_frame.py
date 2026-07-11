@@ -6,8 +6,8 @@ import os
 from datetime import datetime
 from urllib.parse import quote
 
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-UPDATE_HOURS = 2
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
+UPDATE_HOURS = 6
 
 CITIES = [
     {"name": "Tokyo", "lat": 35.68, "lon": 139.69, "country": "Japan"},
@@ -427,7 +427,7 @@ def run():
         print(f"  Image   : generating...")
         updated_at = datetime.now().strftime("%H:%M")
         html = build_html(city, country, weather, season, plant, image_url, updated_at)
-        output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
+        output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "florae.html")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"  Saved   : index.html")
