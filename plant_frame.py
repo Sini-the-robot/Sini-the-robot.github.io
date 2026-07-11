@@ -5,6 +5,22 @@ import time
 import os
 from datetime import datetime
 from urllib.parse import quote
+import json as _json
+
+def load_archive():
+    archive_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "archive.json")
+    if os.path.exists(archive_path):
+        with open(archive_path, "r", encoding="utf-8") as f:
+            return _json.load(f)
+    return []
+
+def save_archive(entry):
+    archive_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "archive.json")
+    archive = load_archive()
+    archive.insert(0, entry)
+    archive = archive[:100]  # max 100 entries
+    with open(archive_path, "w", encoding="utf-8") as f:
+        _json.dump(archive, f, ensure_ascii=False, indent=2)
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
 UPDATE_HOURS = 6
@@ -406,6 +422,13 @@ function openFS(){{ document.getElementById('fsOverlay').classList.add('active')
 function closeFS(){{ document.getElementById('fsOverlay').classList.remove('active'); }}
 document.getElementById('fsOverlay').addEventListener('click',function(e){{ if(e.target===this) closeFS(); }});
 document.addEventListener('keydown',function(e){{ if(e.key==='Escape') closeFS(); if(e.key==='f'||e.key==='F') openFS(); }});
+function downloadImg(){{
+  const a=document.createElement('a');
+  a.href='{image_url}';
+  a.download='florae-{plant["latin"].replace(" ","-")}.jpg';
+  a.target='_blank';
+  a.click();
+}}
 function shareIt(){{
   const btn=document.getElementById('shareBtn');
   if(navigator.share){{ navigator.share({{title:'Florae · {plant["latin"]}',url:window.location.href}}); }}
@@ -415,6 +438,102 @@ function shareIt(){{
   }}); }}
 }}
 </script>
+</body>
+</html>"""
+
+def build_archive_html(archive):
+    favicon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0e0c'/%3E%3Cpath d='M16 28 C16 28 16 14 16 11 C16 4 22 2 26 5 C26 5 20 9 19 15' fill='%235a9a6a'/%3E%3Cpath d='M16 20 C16 20 12 15 8 15 C4 15 4 20 7 23 C10 26 16 22 16 20' fill='%232d5a3d'/%3E%3C/svg%3E"
+    cards = ""
+    for e in archive:
+        cards += f"""
+        <div class="card">
+          <div class="card-img">
+            <img src="{e['image_url']}" alt="{e['common']}" loading="lazy"
+              onerror="this.parentElement.style.background='#1a1a14'"/>
+            <div class="card-overlay">
+              <span class="card-city">{e['city']}, {e['country']}</span>
+              <span class="card-date">{e['date']}</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-latin">{e['latin']}</div>
+            <div class="card-common">{e['common'].upper()}</div>
+            <div class="card-note">{e['note']}</div>
+            <div class="card-tags">
+              <span class="tag">{e['phenology']}</span>
+              <span class="tag">{e['season']}</span>
+              <span class="tag">{e['temp']}°C</span>
+            </div>
+          </div>
+        </div>"""
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Florae · Archive</title>
+<link rel="icon" href="{favicon}">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *{{margin:0;padding:0;box-sizing:border-box;}}
+  html,body{{background:#0a0a08;color:#f2ece0;font-family:'DM Serif Display',Georgia,serif;}}
+  .topbar{{
+    position:sticky;top:0;z-index:50;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:0 1.5rem;height:46px;background:#0a0a08;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+  }}
+  .brand{{font-family:'DM Mono',monospace;font-size:0.55rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.28);}}
+  .back-btn{{
+    font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.16em;
+    text-transform:uppercase;color:#5a9a6a;text-decoration:none;
+    border:1px solid rgba(90,154,106,0.3);padding:0.25rem 0.7rem;
+    transition:all 0.2s;
+  }}
+  .back-btn:hover{{border-color:rgba(90,154,106,0.7);}}
+  .header{{padding:2rem 1.5rem 1.5rem;}}
+  .header h1{{font-size:2rem;font-style:italic;color:rgba(242,236,224,0.9);margin-bottom:0.3rem;}}
+  .header p{{font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.15em;color:rgba(255,255,255,0.2);text-transform:uppercase;}}
+  .grid{{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:1rem;padding:0 1.5rem 2rem;
+  }}
+  .card{{background:#111110;border-radius:3px;overflow:hidden;transition:transform 0.2s;}}
+  .card:hover{{transform:translateY(-2px);}}
+  .card-img{{position:relative;aspect-ratio:3/4;overflow:hidden;background:#1a1a14;}}
+  .card-img img{{width:100%;height:100%;object-fit:cover;}}
+  .card-overlay{{
+    position:absolute;bottom:0;left:0;right:0;
+    background:linear-gradient(transparent,rgba(10,10,8,0.85));
+    padding:1rem 0.75rem 0.6rem;
+    display:flex;justify-content:space-between;align-items:flex-end;
+  }}
+  .card-city{{font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55);}}
+  .card-date{{font-family:'DM Mono',monospace;font-size:0.38rem;color:rgba(255,255,255,0.3);}}
+  .card-info{{padding:0.85rem 0.85rem 1rem;}}
+  .card-latin{{font-size:1.1rem;font-style:italic;color:rgba(242,236,224,0.9);margin-bottom:0.15rem;}}
+  .card-common{{font-family:'DM Mono',monospace;font-size:0.4rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a9a6a;margin-bottom:0.6rem;}}
+  .card-note{{font-size:0.75rem;font-style:italic;line-height:1.5;color:rgba(242,236,224,0.35);margin-bottom:0.7rem;}}
+  .card-tags{{display:flex;gap:0.4rem;flex-wrap:wrap;}}
+  .tag{{font-family:'DM Mono',monospace;font-size:0.36rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(90,154,106,0.7);border:1px solid rgba(90,154,106,0.2);padding:0.15rem 0.45rem;}}
+  .empty{{text-align:center;padding:4rem;font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255,0.15);letter-spacing:0.15em;text-transform:uppercase;}}
+  .shimmer{{height:1.5px;background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);background-size:300% 100%;animation:sh 5s linear infinite;}}
+  @keyframes sh{{0%{{background-position:100% 0;}}100%{{background-position:-200% 0;}}}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Florae · Archive</span>
+  <a class="back-btn" href="florae.html">← Back</a>
+</div>
+<div class="shimmer"></div>
+<div class="header">
+  <h1>The Garden</h1>
+  <p>{len(archive)} plants documented</p>
+</div>
+{"<div class='grid'>" + cards + "</div>" if archive else "<div class='empty'>No plants archived yet</div>"}
 </body>
 </html>"""
 
@@ -438,7 +557,32 @@ def run():
         output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "florae.html")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(html)
-        print(f"  Saved   : index.html")
+        print(f"  Saved   : florae.html")
+
+        # archive
+        save_archive({
+            "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "city": city,
+            "country": country,
+            "latin": plant["latin"],
+            "common": plant["common"],
+            "note": plant["note"],
+            "phenology": plant["phenology"],
+            "compound_name": plant.get("compound_name", ""),
+            "compound": plant.get("compound", plant.get("trait", plant.get("fact", ""))),
+            "season": season,
+            "temp": weather["temp"],
+            "condition": weather["condition"],
+            "image_url": image_url
+        })
+        print(f"  Archive : saved")
+
+        # build archive page
+        archive_html = build_archive_html(load_archive())
+        archive_html_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "archive.html")
+        with open(archive_html_path, "w", encoding="utf-8") as f:
+            f.write(archive_html)
+        print(f"  Archive : page built")
     except Exception as e:
         print(f"  Error   : {e}\n"); return
     try:
