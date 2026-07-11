@@ -91,7 +91,7 @@ Respond ONLY with valid JSON, no markdown, no extra text:
   "phenology": "Current stage (Flowering / Dormant / Fruiting / Budding / Seeding)",
   "compound_name": "Name of the key chemical compound (e.g. Thymol, Curcumin, Caffeine)",
   "compound": "One sentence max 12 words: what makes this compound rare or powerful",
-  "image_prompt": "Beautiful botanical illustration of [plant name], japanese woodblock ukiyo-e style, delicate ink lines, soft muted earth tones, aged cream paper, detailed flowers and leaves, elegant composition, no text, no labels, masterpiece quality"
+  "image_prompt": "Fine botanical illustration of [plant name], traditional ukiyo-e woodblock print style, natural botanical colors, precise ink outlines, ivory paper texture, full plant with stem leaves and flowers, botanically accurate, soft watercolor wash, no text, no labels, museum quality print"
 }}"""
 
     r = requests.post(
