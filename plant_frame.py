@@ -243,12 +243,7 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
   .loading-txt{{ font-family:'DM Mono',monospace; font-size:0.5rem; letter-spacing:0.2em; color:rgba(255,255,255,0.2); text-transform:uppercase; }}
 
   /* SHIMMER LINE */
-  .shimmer-line{{
-    height:1.5px; margin:0 1rem;
-    background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);
-    background-size:300% 100%; animation:shimmer 5s linear infinite;
-  }}
-  @keyframes shimmer{{ 0%{{background-position:100% 0;}} 100%{{background-position:-200% 0;}} }}
+
 
   /* INFO */
   .info{{
@@ -364,8 +359,6 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
     <img class="watermark" src="{wm_url}" alt="Florae"/>
     </div>
   </div>
-
-  <div class="shimmer-line"></div>
 
   <div class="info">
     <div class="weather-row">
