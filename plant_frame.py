@@ -164,7 +164,13 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  window.dataLayer = window.dataLayer || [];
+  gtag('js', new Date());
+  gtag('config', 'G-YEFNCLXC72');
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-YEFNCLXC72');
 </script>
@@ -500,6 +506,12 @@ def build_archive_html(archive):
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YEFNCLXC72');
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
