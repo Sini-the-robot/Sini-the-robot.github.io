@@ -245,6 +245,27 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
   .fs-info{{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:rgba(14,14,12,0.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.08);padding:0.45rem 1.2rem;text-align:center;white-space:nowrap;z-index:101;}}
   .fs-latin{{font-style:italic;font-size:1rem;color:rgba(242,236,224,0.9);}}
   .fs-city{{font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a9a6a;margin-top:0.15rem;}}
+  .premium-modal{{display:none;position:fixed;inset:0;background:rgba(10,10,8,0.85);backdrop-filter:blur(8px);z-index:200;align-items:center;justify-content:center;}}
+  .premium-modal.active{{display:flex;}}
+  .premium-box{{
+    background:#131310;border:1px solid rgba(90,154,106,0.2);
+    padding:2.5rem 2rem;max-width:320px;width:90%;text-align:center;
+    position:relative;border-radius:3px;
+  }}
+  .premium-icon{{font-size:1.8rem;color:#8aab7a;margin-bottom:1rem;}}
+  .premium-title{{font-size:1.5rem;font-style:italic;color:rgba(242,236,224,0.9);margin-bottom:0.8rem;}}
+  .premium-desc{{font-family:'DM Mono',monospace;font-size:0.55rem;line-height:1.7;color:rgba(242,236,224,0.3);letter-spacing:0.04em;margin-bottom:1.5rem;}}
+  .premium-soon{{
+    display:inline-block;font-family:'DM Mono',monospace;font-size:0.48rem;
+    letter-spacing:0.2em;text-transform:uppercase;color:#5a9a6a;
+    border:1px solid rgba(90,154,106,0.4);padding:0.4rem 1.2rem;
+  }}
+  .premium-close{{
+    position:absolute;top:0.8rem;right:0.8rem;
+    background:none;border:none;color:rgba(255,255,255,0.2);
+    cursor:pointer;font-size:0.9rem;transition:color 0.2s;
+  }}
+  .premium-close:hover{{color:rgba(255,255,255,0.6);}}
 </style>
 </head>
 <body>
@@ -333,22 +354,22 @@ function shareIt(){{
   else{{navigator.clipboard.writeText(window.location.href).then(()=>{{btn.textContent='✓';btn.style.color='#5a9a6a';setTimeout(()=>{{btn.textContent='↗';btn.style.color='';}},2000);}});}}
 }}
 function downloadImg(){{
-  const btn=document.getElementById('dlBtn');
-  btn.textContent='...';
-  fetch('{image_url}')
-    .then(r=>r.blob())
-    .then(blob=>{{
-      const url=URL.createObjectURL(blob);
-      const a=document.createElement('a');
-      a.href=url;
-      a.download='florae-{latin_safe}.jpg';
-      a.click();
-      URL.revokeObjectURL(url);
-      btn.textContent='↓';
-    }})
-    .catch(()=>{{window.open('{image_url}','_blank');btn.textContent='↓';}});
+  document.getElementById('premiumModal').classList.add('active');
+}}
+function closePremium(){{
+  document.getElementById('premiumModal').classList.remove('active');
 }}
 </script>
+<!-- Premium Modal -->
+<div class="premium-modal" id="premiumModal">
+  <div class="premium-box">
+    <div class="premium-icon">✦</div>
+    <div class="premium-title">Florae Premium</div>
+    <div class="premium-desc">Download high-resolution botanical prints without watermark.</div>
+    <div class="premium-soon">Coming soon</div>
+    <button class="premium-close" onclick="closePremium()">✕</button>
+  </div>
+</div>
 </body>
 </html>"""
 
@@ -436,6 +457,16 @@ def build_archive_html(archive):
   <p>{count} plants documented</p>
 </div>
 {"<div class='grid'>" + cards + "</div>" if archive else "<div class='empty'>No plants archived yet</div>"}
+<!-- Premium Modal -->
+<div class="premium-modal" id="premiumModal">
+  <div class="premium-box">
+    <div class="premium-icon">✦</div>
+    <div class="premium-title">Florae Premium</div>
+    <div class="premium-desc">Download high-resolution botanical prints without watermark.</div>
+    <div class="premium-soon">Coming soon</div>
+    <button class="premium-close" onclick="closePremium()">✕</button>
+  </div>
+</div>
 </body>
 </html>"""
 
