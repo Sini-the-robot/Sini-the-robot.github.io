@@ -160,6 +160,14 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
 <title>Florae · {city}</title>
 <link rel="icon" href="{FAVICON}">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YEFNCLXC72');
+</script>
 <style>
   *{{ margin:0; padding:0; box-sizing:border-box; }}
   html,body{{ width:100%; background:#0e0e0c; font-family:'DM Serif Display',Georgia,serif; }}
@@ -490,6 +498,14 @@ def build_archive_html(archive):
 <title>Florae · Archive</title>
 <link rel="icon" href="{favicon}">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YEFNCLXC72');
+</script>
 <style>
   *{{margin:0;padding:0;box-sizing:border-box;}}
   html,body{{background:#0a0a08;color:#f2ece0;font-family:'DM Serif Display',Georgia,serif;}}
