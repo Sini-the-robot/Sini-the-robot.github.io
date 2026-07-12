@@ -508,13 +508,13 @@ def build_archive_html(archive):
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-YEFNCLXC72');
 </script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-YEFNCLXC72');
 </script>
