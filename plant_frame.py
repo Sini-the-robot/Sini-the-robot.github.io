@@ -423,11 +423,24 @@ function closeFS(){{ document.getElementById('fsOverlay').classList.remove('acti
 document.getElementById('fsOverlay').addEventListener('click',function(e){{ if(e.target===this) closeFS(); }});
 document.addEventListener('keydown',function(e){{ if(e.key==='Escape') closeFS(); if(e.key==='f'||e.key==='F') openFS(); }});
 function downloadImg(){{
-  const a=document.createElement('a');
-  a.href='{image_url}';
-  a.download='florae-{plant["latin"].replace(" ","-")}.jpg';
-  a.target='_blank';
-  a.click();
+  const btn=document.querySelector('[onclick="downloadImg()"]');
+  const orig=btn.textContent;
+  btn.textContent='...';
+  fetch('{image_url}')
+    .then(r=>r.blob())
+    .then(blob=>{{
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download='florae-{plant["latin"].replace(" ","-")}.jpg';
+      a.click();
+      URL.revokeObjectURL(url);
+      btn.textContent=orig;
+    }})
+    .catch(()=>{{
+      window.open('{image_url}','_blank');
+      btn.textContent=orig;
+    }});
 }}
 function shareIt(){{
   const btn=document.getElementById('shareBtn');
