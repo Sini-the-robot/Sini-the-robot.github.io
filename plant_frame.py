@@ -132,7 +132,7 @@ def get_image_url(image_prompt):
 def get_image_url(image_prompt):
     encoded = quote(image_prompt)
     seed = random.randint(1, 99999)
-    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true"
+    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&t={int(datetime.now().timestamp())}"
 
 import base64 as _b64
 
@@ -157,27 +157,6 @@ def build_html(city, country, weather, season, plant, image_url, updated_at):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="refresh" content="{refresh_seconds}">
-<title>Florae · {city}</title>
-<link rel="icon" href="{FAVICON}">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer = window.dataLayer || [];
-  gtag('js', new Date());
-  gtag('config', 'G-YEFNCLXC72');
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer = window.dataLayer || [];
-  gtag('js', new Date());
-  gtag('config', 'G-YEFNCLXC72');
-</script>
-<style>
-  *{{ margin:0; padding:0; box-sizing:border-box; }}
-  html,body{{ width:100%; background:#0e0e0c; font-family:'DM Serif Display',Georgia,serif; }}
-
   /* TOP BAR */
   .topbar{{
     position:sticky; top:0; z-index:50;
@@ -502,27 +481,6 @@ def build_archive_html(archive):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florae · Archive</title>
-<link rel="icon" href="{favicon}">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEFNCLXC72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-window.dataLayer = window.dataLayer || [];
-  gtag('js', new Date());
-  gtag('config', 'G-YEFNCLXC72');
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer = window.dataLayer || [];
-  gtag('js', new Date());
-  gtag('config', 'G-YEFNCLXC72');
-</script>
-<style>
-  *{{margin:0;padding:0;box-sizing:border-box;}}
-  html,body{{background:#0a0a08;color:#f2ece0;font-family:'DM Serif Display',Georgia,serif;}}
-  .topbar{{
-    position:sticky;top:0;z-index:50;
     display:flex;justify-content:space-between;align-items:center;
     padding:0 1.5rem;height:46px;background:#0a0a08;
     border-bottom:1px solid rgba(255,255,255,0.05);
