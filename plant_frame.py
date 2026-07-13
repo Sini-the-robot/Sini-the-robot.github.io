@@ -516,13 +516,7 @@ def run():
         print(f"  Error   : {e}\n")
         return
 
-    try:
-        os.system('git add florae.html archive.json archive.html')
-        os.system(f'git commit -m "florae: {city}"')
-        os.system('git push')
-        print(f"  GitHub  : pushed\n")
-    except Exception as e:
-        print(f"  GitHub  : failed — {e}\n")
+    print(f"  Done    : {city} — commit handled by workflow\n")
 
 
 if __name__ == "__main__":

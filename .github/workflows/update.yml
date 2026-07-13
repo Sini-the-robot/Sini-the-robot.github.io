@@ -36,5 +36,5 @@ jobs:
           git config user.email "florae-bot@github.com"
           git config user.name "Florae Bot"
           git add florae.html archive.json archive.html
-          git diff --staged --quiet || git commit -m "florae: auto update"
+          git commit -m "florae: auto update $(date -u '+%H:%M UTC')" || echo "nothing to commit"
           git push
