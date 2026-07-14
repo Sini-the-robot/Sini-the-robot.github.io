@@ -95,20 +95,30 @@ Respond ONLY with valid JSON, no markdown, no extra text:
   "image_prompt": "Fine botanical illustration of [plant name], traditional ukiyo-e woodblock print style, natural botanical colors, precise ink outlines, ivory paper texture, full plant with stem leaves and flowers, botanically accurate, soft watercolor wash, no text, no labels, museum quality print"
 }}"""
 
-    r = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "model": "llama-3.3-70b-versatile",
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 500,
-            "temperature": 0.8
-        },
-        timeout=20
-    )
-    raw = r.json()["choices"][0]["message"]["content"]
-    clean = raw.replace("```json", "").replace("```", "").strip()
-    return json.loads(clean)
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
+                json={
+                    "model": "llama-3.3-70b-versatile",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 500,
+                    "temperature": 0.8
+                },
+                timeout=30
+            )
+            data = r.json()
+            if "choices" not in data:
+                raise ValueError(f"Groq error: {data.get('error', data)}")
+            raw = data["choices"][0]["message"]["content"]
+            clean = raw.replace("```json", "").replace("```", "").strip()
+            return json.loads(clean)
+        except Exception as e:
+            print(f"  Retry {attempt+1}/3: {e}")
+            if attempt < 2:
+                time.sleep(5)
+    raise RuntimeError("Groq API failed after 3 attempts")
 
 def get_image_url(image_prompt):
     encoded = quote(image_prompt)
