@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-14 19:15",
+    "city": "Marrakech",
+    "country": "Morocco",
+    "latin": "Olea europaea",
+    "common": "Olive Tree",
+    "note": "Thriving under warm Moroccan skies",
+    "phenology": "Fruiting",
+    "compound_name": "Oleuropein",
+    "compound": "Potent antioxidant properties",
+    "season": "Summer",
+    "temp": 35,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Olive%20Tree%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=79180&nologo=true&t=1784056509"
+  },
+  {
     "date": "2026-07-14 02:30",
     "city": "Mumbai",
     "country": "India",
