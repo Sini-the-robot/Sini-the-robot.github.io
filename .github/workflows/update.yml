@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -35,4 +35,4 @@ jobs:
           git config user.name "Florae Bot"
           git add florae.html archive.json archive.html
           git commit -m "florae: auto update $(date -u '+%H:%M UTC')" || echo "nothing to commit"
-          git push
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Sini-the-robot/Sini-the-robot.github.io.git main
