@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-17 10:30",
+    "city": "Mumbai",
+    "country": "India",
+    "latin": "Hibiscus rosa-sinensis",
+    "common": "Chinese Hibiscus",
+    "note": "Unfurling large showy flowers",
+    "phenology": "Flowering",
+    "compound_name": "Hibiscin",
+    "compound": "Potent antioxidant properties",
+    "season": "Summer",
+    "temp": 27,
+    "condition": "Showers",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20rosa-sinensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=88240&nologo=true&t=1784284239"
+  },
+  {
     "date": "2026-07-17 08:30",
     "city": "Vancouver",
     "country": "Canada",
