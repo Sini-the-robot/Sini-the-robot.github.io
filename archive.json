@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-18 18:32",
+    "city": "Almaty",
+    "country": "Kazakhstan",
+    "latin": "Artemisia absinthium",
+    "common": "Wormwood",
+    "note": "Blooming under clear summer skies",
+    "phenology": "Flowering",
+    "compound_name": "Thujone",
+    "compound": "Makes it highly toxic",
+    "season": "Summer",
+    "temp": 30,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=9169&nologo=true&t=1784399524"
+  },
+  {
     "date": "2026-07-18 16:31",
     "city": "Prague",
     "country": "Czech Republic",
