@@ -404,8 +404,9 @@ def build_archive_html(archive):
     favicon = FAVICON
     cards = ""
     for e in archive:
+        img_url_safe = e['image_url'].replace("'", "\\'")
         cards += f"""
-        <div class="card" onclick="openFS('{e['image_url'].replace("'","\\'")}','{e['latin']}','{e['city']}, {e['country']}','{e['season']}')">
+        <div class="card" onclick="openFS('{img_url_safe}','{e['latin']}','{e['city']}, {e['country']}','{e['season']}')">
           <div class="card-img">
             <img src="{e['image_url']}" alt="{e['common']}" loading="lazy"
               onerror="this.parentElement.style.background='#1a1a14'"/>
