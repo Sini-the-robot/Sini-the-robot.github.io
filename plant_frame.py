@@ -41,6 +41,19 @@ CITIES = [
     {"name": "Prague", "lat": 50.08, "lon": 14.44, "country": "Czech Republic"},
     {"name": "Hanoi", "lat": 21.03, "lon": 105.85, "country": "Vietnam"},
     {"name": "Auckland", "lat": -36.86, "lon": 174.76, "country": "New Zealand"},
+    {"name": "Isfahan", "lat": 32.66, "lon": 51.68, "country": "Iran"},
+    {"name": "Shiraz", "lat": 29.59, "lon": 52.58, "country": "Iran"},
+    {"name": "Tabriz", "lat": 38.08, "lon": 46.29, "country": "Iran"},
+    {"name": "Mashhad", "lat": 36.30, "lon": 59.60, "country": "Iran"},
+    {"name": "Rasht", "lat": 37.28, "lon": 49.59, "country": "Iran"},
+    {"name": "Yazd", "lat": 31.89, "lon": 54.37, "country": "Iran"},
+    {"name": "Bangalore", "lat": 12.97, "lon": 77.59, "country": "India"},
+    {"name": "Lagos", "lat": 6.52, "lon": 3.38, "country": "Nigeria"},
+    {"name": "Kuala Lumpur", "lat": 3.14, "lon": 101.69, "country": "Malaysia"},
+    {"name": "Santiago", "lat": -33.46, "lon": -70.65, "country": "Chile"},
+    {"name": "Karachi", "lat": 24.86, "lon": 67.01, "country": "Pakistan"},
+    {"name": "Casablanca", "lat": 33.59, "lon": -7.62, "country": "Morocco"},
+    {"name": "Almaty", "lat": 43.22, "lon": 76.85, "country": "Kazakhstan"},
 ]
 
 def get_season(month, lat):
@@ -75,8 +88,11 @@ def get_weather(lat, lon):
         "condition": weather_code_to_text(d["current"]["weather_code"])
     }
 
-def get_plant(city, country, lat, temp, humidity, condition, season):
-    prompt = f"""You are a botanist. Choose ONE native or naturalized plant species currently active in this location.
+def get_plant(city, country, lat, temp, humidity, condition, season, recent_plants=None):
+    avoid = ""
+    if recent_plants:
+        avoid = f"\nAvoid these recently shown species: {', '.join(list(recent_plants)[:10])}"
+    prompt = f"""You are a botanist. Choose ONE native or naturalized plant species currently active in this location.{avoid}
 
 Location: {city}, {country} (lat: {lat:.1f})
 Season: {season}
@@ -389,7 +405,7 @@ def build_archive_html(archive):
     cards = ""
     for e in archive:
         cards += f"""
-        <div class="card">
+        <div class="card" onclick="openFS('{e['image_url'].replace("'","\\'")}','{e['latin']}','{e['city']}, {e['country']}','{e['season']}')">
           <div class="card-img">
             <img src="{e['image_url']}" alt="{e['common']}" loading="lazy"
               onerror="this.parentElement.style.background='#1a1a14'"/>
@@ -397,6 +413,7 @@ def build_archive_html(archive):
               <span class="card-city">{e['city']}, {e['country']}</span>
               <span class="card-date">{e['date']}</span>
             </div>
+            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">{e['latin']}</div>
@@ -454,6 +471,16 @@ def build_archive_html(archive):
   .shimmer{{height:1.5px;background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);background-size:300% 100%;animation:sh 5s linear infinite;}}
   @keyframes sh{{0%{{background-position:100% 0;}}100%{{background-position:-200% 0;}}}}
   .empty{{text-align:center;padding:4rem;font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255,0.15);letter-spacing:0.15em;text-transform:uppercase;}}
+  .card{{cursor:pointer;}}
+  .card-zoom{{position:absolute;top:0.6rem;right:0.6rem;background:rgba(14,14,12,0.6);backdrop-filter:blur(4px);color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.08);width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;opacity:0;transition:opacity 0.2s;}}
+  .card:hover .card-zoom{{opacity:1;}}
+  .fs-overlay{{display:none;position:fixed;inset:0;background:rgba(10,10,8,0.97);z-index:200;align-items:center;justify-content:center;flex-direction:column;}}
+  .fs-overlay.active{{display:flex;}}
+  .fs-img{{max-width:100vw;max-height:85vh;object-fit:contain;display:block;}}
+  .fs-close{{position:fixed;top:1rem;right:1rem;background:rgba(14,14,12,0.7);color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.12);width:34px;height:34px;border-radius:4px;cursor:pointer;font-size:0.9rem;display:flex;align-items:center;justify-content:center;z-index:201;}}
+  .fs-info{{margin-top:1.2rem;text-align:center;}}
+  .fs-latin{{font-style:italic;font-size:1.1rem;color:rgba(242,236,224,0.9);}}
+  .fs-city{{font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a9a6a;margin-top:0.3rem;}}
 </style>
 </head>
 <body>
@@ -467,6 +494,32 @@ def build_archive_html(archive):
   <p>{count} plants documented</p>
 </div>
 {"<div class='grid'>" + cards + "</div>" if archive else "<div class='empty'>No plants archived yet</div>"}
+
+<div class="fs-overlay" id="fsOverlay">
+  <button class="fs-close" onclick="closeFS()">✕</button>
+  <img class="fs-img" id="fsImg" src="" alt=""/>
+  <div class="fs-info">
+    <div class="fs-latin" id="fsLatin"></div>
+    <div class="fs-city" id="fsCity"></div>
+  </div>
+</div>
+<script>
+function openFS(url, latin, city, season){{
+  document.getElementById('fsImg').src = url;
+  document.getElementById('fsLatin').textContent = latin;
+  document.getElementById('fsCity').textContent = city + ' · ' + season;
+  document.getElementById('fsOverlay').classList.add('active');
+}}
+function closeFS(){{
+  document.getElementById('fsOverlay').classList.remove('active');
+}}
+document.getElementById('fsOverlay').addEventListener('click', function(e){{
+  if(e.target === this) closeFS();
+}});
+document.addEventListener('keydown', function(e){{
+  if(e.key === 'Escape') closeFS();
+}});
+</script>
 <!-- Premium Modal -->
 <div class="premium-modal" id="premiumModal">
   <div class="premium-box">
@@ -482,7 +535,15 @@ def build_archive_html(archive):
 
 
 def run():
-    city_data = random.choice(CITIES)
+    # Avoid repeating recent plants and cities
+    archive = load_archive()
+    recent_plants = {e["latin"] for e in archive[:15]}
+    recent_cities = {e["city"] for e in archive[:8]}
+
+    available = [c for c in CITIES if c["name"] not in recent_cities]
+    if not available:
+        available = CITIES
+    city_data = random.choice(available)
     city, country = city_data["name"], city_data["country"]
     lat, lon = city_data["lat"], city_data["lon"]
     print(f"[{datetime.now().strftime('%H:%M')}] {city}, {country}")
@@ -492,7 +553,7 @@ def run():
         print(f"  Weather : {weather['temp']}°C, {weather['condition']}")
         month = datetime.now().month
         season = get_season(month, lat)
-        plant = get_plant(city, country, lat, weather["temp"], weather["humidity"], weather["condition"], season)
+        plant = get_plant(city, country, lat, weather["temp"], weather["humidity"], weather["condition"], season, recent_plants)
         print(f"  Plant   : {plant['latin']} ({plant['common']})")
         print(f"  Compound: {plant.get('compound_name','—')}")
         image_url = get_image_url(plant.get("image_prompt", f"botanical illustration of {plant['latin']}, ukiyo-e style"))
