@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-18 06:42",
+    "city": "Bogota",
+    "country": "Colombia",
+    "latin": "Begonia semperflorens",
+    "common": "Ever-flowering Begonia",
+    "note": "Delicate white blooms unfold",
+    "phenology": "Flowering",
+    "compound_name": "Begonicine",
+    "compound": "Rare alkaloid with potent properties",
+    "season": "Summer",
+    "temp": 11,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=532&nologo=true&t=1784356972"
+  },
+  {
     "date": "2026-07-18 06:30",
     "city": "Marrakech",
     "country": "Morocco",
