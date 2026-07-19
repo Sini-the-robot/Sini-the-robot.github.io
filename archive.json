@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-19 10:30",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "latin": "Campanula medium",
+    "common": "Canterbury Bell",
+    "note": "Swaying gently in rain",
+    "phenology": "Flowering",
+    "compound_name": "Ursolic acid",
+    "compound": "Rare antioxidant properties",
+    "season": "Summer",
+    "temp": 20,
+    "condition": "Rainy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=77501&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-19 09:23",
     "city": "Nairobi",
     "country": "Kenya",
