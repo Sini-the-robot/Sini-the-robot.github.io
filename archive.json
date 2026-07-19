@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-19 20:31",
+    "city": "Santiago",
+    "country": "Chile",
+    "latin": "Peumus boldus",
+    "common": "Boldo",
+    "note": "Unfurling new leaves",
+    "phenology": "Dormant",
+    "compound_name": "Boldine",
+    "compound": "Rare aporphine alkaloid",
+    "season": "Winter",
+    "temp": 11,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=55712&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-19 18:31",
     "city": "Tokyo",
     "country": "Japan",
