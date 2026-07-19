@@ -408,7 +408,7 @@ def build_archive_html(archive):
         <div class="card" onclick="openFS('{img_url_safe}','{e['latin']}','{e['city']}, {e['country']}','{e['season']}')">
           <div class="card-img">
             <img src="{e['image_url']}" alt="{e['common']}" loading="lazy"
-              onerror="this.parentElement.style.background='#1a1a14'"/>
+              onerror="if(!this.dataset.retry){{this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}}else{{this.style.opacity='0'}}"/>
             <div class="card-overlay">
               <span class="card-city">{e['city']}, {e['country']}</span>
               <span class="card-date">{e['date']}</span>
