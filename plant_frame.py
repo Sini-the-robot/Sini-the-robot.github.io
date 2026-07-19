@@ -138,9 +138,8 @@ Respond ONLY with valid JSON, no markdown, no extra text:
 
 def get_image_url(image_prompt):
     encoded = quote(image_prompt)
-    seed = random.randint(1, 99999)
-    ts = int(datetime.now().timestamp())
-    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&t={ts}"
+    seed = abs(hash(image_prompt)) % 99999
+    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&enhance=true"
 
 def get_watermark_url():
     logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logo.svg")
