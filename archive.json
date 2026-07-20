@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-20 22:30",
+    "city": "Helsinki",
+    "country": "Finland",
+    "latin": "Campanula patula",
+    "common": "Spreading Bellflower",
+    "note": "Delicate bells sway gently",
+    "phenology": "Flowering",
+    "compound_name": "Flavonoids",
+    "compound": "Potent antioxidants abound",
+    "season": "Summer",
+    "temp": 16,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Campanula%20patula%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=54955&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-20 20:30",
     "city": "Shiraz",
     "country": "Iran",
@@ -1483,20 +1498,5 @@
     "temp": 10,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=42067&nologo=true&t=1783842918"
-  },
-  {
-    "date": "2026-07-12 07:51",
-    "city": "Lima",
-    "country": "Peru",
-    "latin": "Passiflora caerulea",
-    "common": "Blue Passion Flower",
-    "note": "Unfurling tenderly in winter's warmth",
-    "phenology": "Flowering",
-    "compound_name": "Passiflorin",
-    "compound": "Rare flavonoid with sedative properties",
-    "season": "Winter",
-    "temp": 20,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Passiflora%20caerulea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=21499&nologo=true"
   }
 ]
