@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-20 14:30",
+    "city": "Vancouver",
+    "country": "Canada",
+    "latin": "Nootka rose",
+    "common": "Rosa nutkana",
+    "note": "Blooming profusely",
+    "phenology": "Flowering",
+    "compound_name": "Rosarin",
+    "compound": "Rare antioxidant properties",
+    "season": "Summer",
+    "temp": 17,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nootka%20rose%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=22808&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-20 12:30",
     "city": "Accra",
     "country": "Ghana",
