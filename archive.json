@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-21 04:30",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "latin": "Newbouldia laevis",
+    "common": "Tree of Life",
+    "note": "Blossoming in tropical twilight",
+    "phenology": "Flowering",
+    "compound_name": "Saponin",
+    "compound": "Rare due to complex structure",
+    "season": "Summer",
+    "temp": 25,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Newbouldia%20laevis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=12881&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-21 02:30",
     "city": "Reykjavik",
     "country": "Iceland",
@@ -1483,20 +1498,5 @@
     "temp": 30,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Paliurus%20spina-christi%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=95755&nologo=true&t=1783860887"
-  },
-  {
-    "date": "2026-07-12 12:49",
-    "city": "Oslo",
-    "country": "Norway",
-    "latin": "Campanula rotundifolia",
-    "common": "Harebell",
-    "note": "Dainty bells sway gently",
-    "phenology": "Flowering",
-    "compound_name": "Ursolic acid",
-    "compound": "Rare antioxidant properties",
-    "season": "Summer",
-    "temp": 25,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Harebell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=76158&nologo=true&t=1783860556"
   }
 ]
