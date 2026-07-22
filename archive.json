@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-22 20:30",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "latin": "Impatiens walleriana",
+    "common": "Busy Lizzie",
+    "note": "Blooming vibrant flowers",
+    "phenology": "Flowering",
+    "compound_name": "2-Hydroxy-4-methoxybenzaldehyde",
+    "compound": "Rare antioxidant properties",
+    "season": "Summer",
+    "temp": 26,
+    "condition": "Rainy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Impatiens%20walleriana%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=38753&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-22 18:30",
     "city": "Mexico City",
     "country": "Mexico",
@@ -1483,20 +1498,5 @@
     "temp": 26,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43789&nologo=true&t=1784068260"
-  },
-  {
-    "date": "2026-07-14 20:31",
-    "city": "Addis Ababa",
-    "country": "Ethiopia",
-    "latin": "Coffea arabica",
-    "common": "Arabian Coffee",
-    "note": "Blooming under clear skies",
-    "phenology": "Flowering",
-    "compound_name": "Caffeine",
-    "compound": "Rare stimulant in nature",
-    "season": "Summer",
-    "temp": 14,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Coffea%20arabica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=44801&nologo=true&t=1784061063"
   }
 ]
