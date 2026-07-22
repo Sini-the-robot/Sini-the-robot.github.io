@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-22 12:30",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "latin": "Angelica archangelica",
+    "common": "Garden Angelica",
+    "note": "Tall stems swaying gently",
+    "phenology": "Flowering",
+    "compound_name": "Furano-coumarin",
+    "compound": "Rare due to complex synthesis",
+    "season": "Summer",
+    "temp": 31,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=90908&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-22 10:30",
     "city": "Tbilisi",
     "country": "Georgia",
@@ -1483,20 +1498,5 @@
     "temp": 22,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71154&nologo=true&t=1783989056"
-  },
-  {
-    "date": "2026-07-13 22:31",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "latin": "Pelargonium cucullatum",
-    "common": "Wildemalva",
-    "note": "Thriving in moist winter conditions",
-    "phenology": "Budding",
-    "compound_name": "Geraniol",
-    "compound": "Rare antimicrobial properties found",
-    "season": "Winter",
-    "temp": 8,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pelargonium%20cucullatum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=10758&nologo=true&t=1783981860"
   }
 ]
