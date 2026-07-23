@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-23 20:30",
+    "city": "Oslo",
+    "country": "Norway",
+    "latin": "Alnus glutinosa",
+    "common": "Black Alder",
+    "note": "Unfurling catkins in summer breeze",
+    "phenology": "Flowering",
+    "compound_name": "Betulin",
+    "compound": "Rare triterpenoid with antimicrobial properties",
+    "season": "Summer",
+    "temp": 19,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Alnus%20glutinosa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=40235&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-23 18:30",
     "city": "Bogota",
     "country": "Colombia",
