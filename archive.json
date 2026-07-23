@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-23 18:30",
+    "city": "Bogota",
+    "country": "Colombia",
+    "latin": "Begonia bogotensis",
+    "common": "Bogota Begonia",
+    "note": "Unfurling petals in rainy mist",
+    "phenology": "Flowering",
+    "compound_name": "Begonicine",
+    "compound": "Rare alkaloid with antimicrobial properties",
+    "season": "Summer",
+    "temp": 17,
+    "condition": "Rainy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20bogotensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=88585&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-23 16:30",
     "city": "Amsterdam",
     "country": "Netherlands",
