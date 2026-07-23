@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-23 04:30",
+    "city": "Yazd",
+    "country": "Iran",
+    "latin": "Peganum harmala",
+    "common": "Syrian Rue",
+    "note": "Blooming under desert skies",
+    "phenology": "Flowering",
+    "compound_name": "Harmine",
+    "compound": "Rare tryptamine alkaloid",
+    "season": "Summer",
+    "temp": 30,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=4071&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-23 02:30",
     "city": "Bangalore",
     "country": "India",
@@ -1483,20 +1498,5 @@
     "temp": 33,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Henna%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=2953&nologo=true&t=1784097058"
-  },
-  {
-    "date": "2026-07-15 04:30",
-    "city": "Vienna",
-    "country": "Austria",
-    "latin": "Digitalis purpurea",
-    "common": "Foxglove",
-    "note": "Towering spikes of regal beauty",
-    "phenology": "Flowering",
-    "compound_name": "Digoxin",
-    "compound": "Rare cardiac glycoside",
-    "season": "Summer",
-    "temp": 22,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=77924&nologo=true&t=1784089856"
   }
 ]
