@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-24 18:30",
+    "city": "Vancouver",
+    "country": "Canada",
+    "latin": "Mahonia aquifolium",
+    "common": "Oregon Grape",
+    "note": "Unfurling yellow flowers",
+    "phenology": "Flowering",
+    "compound_name": "Berberine",
+    "compound": "Rare alkaloid with antimicrobial properties",
+    "season": "Summer",
+    "temp": 21,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Mahonia%20aquifolium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=96416&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-24 16:36",
     "city": "Cape Town",
     "country": "South Africa",
@@ -1483,20 +1498,5 @@
     "temp": 28,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Vitis%20vinifera%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=93724&nologo=true&t=1784125860"
-  },
-  {
-    "date": "2026-07-15 12:31",
-    "city": "Hanoi",
-    "country": "Vietnam",
-    "latin": "Plumeria obtusa",
-    "common": "Frangipani",
-    "note": "Blooming fragrant flowers",
-    "phenology": "Flowering",
-    "compound_name": "Plumericin",
-    "compound": "Makes Plumeria rare",
-    "season": "Summer",
-    "temp": 31,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Plumeria%20obtusa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=89903&nologo=true&t=1784118661"
   }
 ]
