@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-25 18:31",
+    "city": "Kyoto",
+    "country": "Japan",
+    "latin": "Cerasus serrulata",
+    "common": "Japanese Cherry",
+    "note": "Unfurling delicate petals",
+    "phenology": "Fruiting",
+    "compound_name": "Amygdalin",
+    "compound": "Toxic cyanide compound",
+    "season": "Summer",
+    "temp": 24,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cerasus%20serrulata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=17757&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-25 16:31",
     "city": "Auckland",
     "country": "New Zealand",
@@ -1483,20 +1498,5 @@
     "temp": 16,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Celtis%20tala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=68454&nologo=true&t=1784205056"
-  },
-  {
-    "date": "2026-07-16 10:30",
-    "city": "Buenos Aires",
-    "country": "Argentina",
-    "latin": "Lantana camara",
-    "common": "Lantana",
-    "note": "Blooming quietly",
-    "phenology": "Flowering",
-    "compound_name": "Oleanolic acid",
-    "compound": "Rare due to complex synthesis",
-    "season": "Winter",
-    "temp": 15,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66321&nologo=true&t=1784197859"
   }
 ]
