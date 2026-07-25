@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-25 00:30",
+    "city": "Tokyo",
+    "country": "Japan",
+    "latin": "Platycodon grandiflorus",
+    "common": "Balloon Flower",
+    "note": "Unfurling blue bell-shaped blooms",
+    "phenology": "Flowering",
+    "compound_name": "Platycoside",
+    "compound": "Rare saponin with potent effects",
+    "season": "Summer",
+    "temp": 29,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Platycodon%20grandiflorus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=6260&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-24 22:31",
     "city": "Prague",
     "country": "Czech Republic",
@@ -1483,20 +1498,5 @@
     "temp": 25,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nootka%20rose%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85647&nologo=true&t=1784147460"
-  },
-  {
-    "date": "2026-07-15 18:31",
-    "city": "Lima",
-    "country": "Peru",
-    "latin": "Nicotiana glauca",
-    "common": "Tree Tobacco",
-    "note": "Blooming under partly cloudy skies",
-    "phenology": "Flowering",
-    "compound_name": "Anabasine",
-    "compound": "Rare nicotine-like alkaloid",
-    "season": "Winter",
-    "temp": 24,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nicotiana%20glauca%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=46935&nologo=true&t=1784140267"
   }
 ]
