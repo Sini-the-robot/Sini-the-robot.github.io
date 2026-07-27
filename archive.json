@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-27 04:31",
+    "city": "Lima",
+    "country": "Peru",
+    "latin": "Nicotiana glauca",
+    "common": "Tree Tobacco",
+    "note": "Blooming under cloudy skies",
+    "phenology": "Flowering",
+    "compound_name": "Anabasine",
+    "compound": "Rare nicotine-like alkaloid",
+    "season": "Winter",
+    "temp": 21,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nicotiana%20glauca%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=74840&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-27 02:31",
     "city": "Accra",
     "country": "Ghana",
@@ -1483,20 +1498,5 @@
     "temp": 23,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dandelion%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=49816&nologo=true&t=1784327446"
-  },
-  {
-    "date": "2026-07-17 20:31",
-    "city": "Nairobi",
-    "country": "Kenya",
-    "latin": "Impatiens walleriana",
-    "common": "Busy Lizzie",
-    "note": "Blooming vibrant petals amidst Nairobi's winter",
-    "phenology": "Flowering",
-    "compound_name": "2-Hydroxy-4-methoxybenzaldehyde",
-    "compound": "Rare due to unique enzymatic synthesis",
-    "season": "Winter",
-    "temp": 16,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Busy%20Lizzie%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=86387&nologo=true&t=1784320310"
   }
 ]
