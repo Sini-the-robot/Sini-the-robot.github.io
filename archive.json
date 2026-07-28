@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-28 22:30",
+    "city": "Kyoto",
+    "country": "Japan",
+    "latin": "Ginkgo biloba",
+    "common": "Maidenhair Tree",
+    "note": "Unfurling fan-shaped leaves slowly",
+    "phenology": "Fruiting",
+    "compound_name": "Bilobalide",
+    "compound": "Rare neuroprotective properties",
+    "season": "Summer",
+    "temp": 26,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ginkgo%20biloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=7607&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-28 20:30",
     "city": "Buenos Aires",
     "country": "Argentina",
@@ -1483,20 +1498,5 @@
     "temp": 15,
     "condition": "Rainy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71580&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-19 20:31",
-    "city": "Santiago",
-    "country": "Chile",
-    "latin": "Peumus boldus",
-    "common": "Boldo",
-    "note": "Unfurling new leaves",
-    "phenology": "Dormant",
-    "compound_name": "Boldine",
-    "compound": "Rare aporphine alkaloid",
-    "season": "Winter",
-    "temp": 11,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=55712&nologo=true&enhance=true"
   }
 ]
