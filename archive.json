@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-28 14:30",
+    "city": "Lahore",
+    "country": "Pakistan",
+    "latin": "Cannabis sativa",
+    "common": "Hemp",
+    "note": "Swaying gently in summer breeze",
+    "phenology": "Flowering",
+    "compound_name": "Cannabidiol",
+    "compound": "Powerful non-psychoactive compound",
+    "season": "Summer",
+    "temp": 31,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cannabis%20sativa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=59137&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-28 12:30",
     "city": "Accra",
     "country": "Ghana",
@@ -1483,20 +1498,5 @@
     "temp": 20,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nicotiana%20glauca%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85575&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-19 10:30",
-    "city": "Prague",
-    "country": "Czech Republic",
-    "latin": "Campanula medium",
-    "common": "Canterbury Bell",
-    "note": "Swaying gently in rain",
-    "phenology": "Flowering",
-    "compound_name": "Ursolic acid",
-    "compound": "Rare antioxidant properties",
-    "season": "Summer",
-    "temp": 20,
-    "condition": "Rainy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=77501&nologo=true&enhance=true"
   }
 ]
