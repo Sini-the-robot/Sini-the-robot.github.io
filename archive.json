@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-30 22:30",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "latin": "Leptinella squalida",
+    "common": "Brass Buttons",
+    "note": "Delicate buttons glisten with rain",
+    "phenology": "Dormant",
+    "compound_name": "Flavonoids",
+    "compound": "Rare antioxidant properties found",
+    "season": "Winter",
+    "temp": 14,
+    "condition": "Rainy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45066&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-07-30 20:30",
     "city": "Kuala Lumpur",
     "country": "Malaysia",
@@ -1483,20 +1498,5 @@
     "temp": 23,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Taraxacum%20officinale%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=17457&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-22 12:30",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "latin": "Angelica archangelica",
-    "common": "Garden Angelica",
-    "note": "Tall stems swaying gently",
-    "phenology": "Flowering",
-    "compound_name": "Furano-coumarin",
-    "compound": "Rare due to complex synthesis",
-    "season": "Summer",
-    "temp": 31,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=90908&nologo=true&enhance=true"
   }
 ]
