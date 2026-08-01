@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-01 22:30",
+    "city": "Accra",
+    "country": "Ghana",
+    "latin": "Annona muricata",
+    "common": "Soursop",
+    "note": "Blooming under cloudy skies",
+    "phenology": "Flowering",
+    "compound_name": "Annonacin",
+    "compound": "Potent neurotoxin found rarely",
+    "season": "Summer",
+    "temp": 23,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=98342&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-08-01 20:30",
     "city": "Istanbul",
     "country": "Turkey",
@@ -1483,20 +1498,5 @@
     "temp": 36,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Eucalyptus%20camaldulensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=33907&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-24 12:30",
-    "city": "Mashhad",
-    "country": "Iran",
-    "latin": "Peganum harmala",
-    "common": "Harmal",
-    "note": "Blooming under clear sky",
-    "phenology": "Flowering",
-    "compound_name": "Harmine",
-    "compound": "Rare alkaloid with medicinal properties",
-    "season": "Summer",
-    "temp": 31,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=37785&nologo=true&enhance=true"
   }
 ]
