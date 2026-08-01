@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-01 06:30",
+    "city": "Oslo",
+    "country": "Norway",
+    "latin": "Campanula medium",
+    "common": "Canterbury Bell",
+    "note": "Dainty bells swaying gently",
+    "phenology": "Flowering",
+    "compound_name": "Ursolic acid",
+    "compound": "Rare in plant tissues",
+    "season": "Summer",
+    "temp": 15,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66674&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-08-01 04:30",
     "city": "Sydney",
     "country": "Australia",
@@ -1483,20 +1498,5 @@
     "temp": 8,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Banksia%20integrifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=54227&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-23 20:30",
-    "city": "Oslo",
-    "country": "Norway",
-    "latin": "Alnus glutinosa",
-    "common": "Black Alder",
-    "note": "Unfurling catkins in summer breeze",
-    "phenology": "Flowering",
-    "compound_name": "Betulin",
-    "compound": "Rare triterpenoid with antimicrobial properties",
-    "season": "Summer",
-    "temp": 19,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Alnus%20glutinosa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=40235&nologo=true&enhance=true"
   }
 ]
