@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-03 00:30",
+    "city": "Lima",
+    "country": "Peru",
+    "latin": "Tropaeolum peruvianum",
+    "common": "Peruvian nasturtium",
+    "note": "Unfurling tender shoots",
+    "phenology": "Budding",
+    "compound_name": "Benzoic acid",
+    "compound": "Rare antibacterial properties",
+    "season": "Winter",
+    "temp": 20,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tropaeolum%20peruvianum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=62684&nologo=true&enhance=true"
+  },
+  {
     "date": "2026-08-02 22:30",
     "city": "Cairo",
     "country": "Egypt",
@@ -1483,20 +1498,5 @@
     "temp": 24,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cerasus%20serrulata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=17757&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-25 16:31",
-    "city": "Auckland",
-    "country": "New Zealand",
-    "latin": "Coprosma robusta",
-    "common": "Karamu",
-    "note": "Dormant, awaiting warmer days",
-    "phenology": "Dormant",
-    "compound_name": "Quinic acid",
-    "compound": "Rare in winter flora",
-    "season": "Winter",
-    "temp": 11,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Coprosma%20robusta%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=12510&nologo=true&enhance=true"
   }
 ]
