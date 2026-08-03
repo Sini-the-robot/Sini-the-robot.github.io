@@ -41,16 +41,6 @@
   .shimmer{height:1.5px;background:linear-gradient(90deg,#2d5a3d,#8aab7a,#c8a96e,#2d5a3d);background-size:300% 100%;animation:sh 5s linear infinite;}
   @keyframes sh{0%{background-position:100% 0;}100%{background-position:-200% 0;}}
   .empty{text-align:center;padding:4rem;font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255,0.15);letter-spacing:0.15em;text-transform:uppercase;}
-  .card{cursor:pointer;}
-  .card-zoom{position:absolute;top:0.6rem;right:0.6rem;background:rgba(14,14,12,0.6);backdrop-filter:blur(4px);color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.08);width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;opacity:0;transition:opacity 0.2s;}
-  .card:hover .card-zoom{opacity:1;}
-  .fs-overlay{display:none;position:fixed;inset:0;background:rgba(10,10,8,0.97);z-index:200;align-items:center;justify-content:center;flex-direction:column;}
-  .fs-overlay.active{display:flex;}
-  .fs-img{max-width:100vw;max-height:85vh;object-fit:contain;display:block;}
-  .fs-close{position:fixed;top:1rem;right:1rem;background:rgba(14,14,12,0.7);color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.12);width:34px;height:34px;border-radius:4px;cursor:pointer;font-size:0.9rem;display:flex;align-items:center;justify-content:center;z-index:201;}
-  .fs-info{margin-top:1.2rem;text-align:center;}
-  .fs-latin{font-style:italic;font-size:1.1rem;color:rgba(242,236,224,0.9);}
-  .fs-city{font-family:'DM Mono',monospace;font-size:0.44rem;letter-spacing:0.18em;text-transform:uppercase;color:#5a9a6a;margin-top:0.3rem;}
 </style>
 </head>
 <body>
@@ -64,15 +54,34 @@
   <p>100 plants documented</p>
 </div>
 <div class='grid'>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=40854&nologo=true&enhance=true','Cordyline australis','Auckland, New Zealand','Winter')">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20rosa-sinensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=76274&nologo=true&t=1785742118" alt="Chinese Hibiscus" loading="lazy"
+              onerror="this.parentElement.style.background='#1a1a14'"/>
+            <div class="card-overlay">
+              <span class="card-city">Bangkok, Thailand</span>
+              <span class="card-date">2026-08-03 07:28</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-latin">Hibiscus rosa-sinensis</div>
+            <div class="card-common">CHINESE HIBISCUS</div>
+            <div class="card-note">Unfurls showy blooms in summer heat</div>
+            <div class="card-tags">
+              <span class="tag">Flowering</span>
+              <span class="tag">Summer</span>
+              <span class="tag">32°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=40854&nologo=true&enhance=true" alt="New Zealand cabbage tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-08-03 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Cordyline australis</div>
@@ -85,15 +94,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20bogotensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64562&nologo=true&enhance=true','Begonia bogotensis','Bogota, Colombia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20bogotensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64562&nologo=true&enhance=true" alt="Bogota Begonia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bogota, Colombia</span>
               <span class="card-date">2026-08-03 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Begonia bogotensis</div>
@@ -106,15 +114,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20canina%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=29125&nologo=true&enhance=true','Rosa canina','Tbilisi, Georgia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20canina%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=29125&nologo=true&enhance=true" alt="Dog Rose" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tbilisi, Georgia</span>
               <span class="card-date">2026-08-03 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Rosa canina</div>
@@ -127,15 +134,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tropaeolum%20peruvianum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=62684&nologo=true&enhance=true','Tropaeolum peruvianum','Lima, Peru','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tropaeolum%20peruvianum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=62684&nologo=true&enhance=true" alt="Peruvian nasturtium" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lima, Peru</span>
               <span class="card-date">2026-08-03 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Tropaeolum peruvianum</div>
@@ -148,15 +154,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=22206&nologo=true&enhance=true','Ziziphus jujuba','Cairo, Egypt','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=22206&nologo=true&enhance=true" alt="Jujube" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cairo, Egypt</span>
               <span class="card-date">2026-08-02 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ziziphus jujuba</div>
@@ -169,15 +174,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Newbouldia%20laevis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=11541&nologo=true&enhance=true','Newbouldia laevis','Lagos, Nigeria','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Newbouldia%20laevis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=11541&nologo=true&enhance=true" alt="Tree hibiscus" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lagos, Nigeria</span>
               <span class="card-date">2026-08-02 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Newbouldia laevis</div>
@@ -190,15 +194,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pistacia%20atlantica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=80268&nologo=true&enhance=true','Pistacia atlantica','Isfahan, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pistacia%20atlantica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=80268&nologo=true&enhance=true" alt="Atlantic pistachio" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Isfahan, Iran</span>
               <span class="card-date">2026-08-02 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pistacia atlantica</div>
@@ -211,15 +214,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clerodendrum%20trichotomum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71122&nologo=true&enhance=true','Clerodendrum trichotomum','Kyoto, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clerodendrum%20trichotomum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71122&nologo=true&enhance=true" alt="Harlequin Glory Bower" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kyoto, Japan</span>
               <span class="card-date">2026-08-02 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Clerodendrum trichotomum</div>
@@ -232,15 +234,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Butea%20monosperma%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47303&nologo=true&enhance=true','Butea monosperma','Mumbai, India','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Butea%20monosperma%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47303&nologo=true&enhance=true" alt="Palash" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mumbai, India</span>
               <span class="card-date">2026-08-02 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Butea monosperma</div>
@@ -253,15 +254,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calliphrone%20rossica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=35117&nologo=true&enhance=true','Calliphrone rossica','Yazd, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calliphrone%20rossica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=35117&nologo=true&enhance=true" alt="Rossica calliphrone" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Yazd, Iran</span>
               <span class="card-date">2026-08-02 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Calliphrone rossica</div>
@@ -274,15 +274,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=36867&nologo=true&enhance=true','Leptinella squalida','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=36867&nologo=true&enhance=true" alt="Brunnera" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-08-02 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Leptinella squalida</div>
@@ -295,15 +294,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=59993&nologo=true&enhance=true','Peganum harmala','Rasht, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=59993&nologo=true&enhance=true" alt="Syrian Rue" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Rasht, Iran</span>
               <span class="card-date">2026-08-02 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peganum harmala</div>
@@ -316,15 +314,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85681&nologo=true&enhance=true','Hibiscus mutabilis','Kuala Lumpur, Malaysia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85681&nologo=true&enhance=true" alt="Cotton Rose" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kuala Lumpur, Malaysia</span>
               <span class="card-date">2026-08-02 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hibiscus mutabilis</div>
@@ -337,15 +334,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=67818&nologo=true&enhance=true','Artemisia absinthium','Almaty, Kazakhstan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=67818&nologo=true&enhance=true" alt="Wormwood" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Almaty, Kazakhstan</span>
               <span class="card-date">2026-08-02 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Artemisia absinthium</div>
@@ -358,15 +354,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Geranium%20sylvaticum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85827&nologo=true&enhance=true','Geranium sylvaticum','Oslo, Norway','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Geranium%20sylvaticum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85827&nologo=true&enhance=true" alt="Wood Cranesbill" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Oslo, Norway</span>
               <span class="card-date">2026-08-02 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Geranium sylvaticum</div>
@@ -379,15 +374,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Plumbago%20indica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=58696&nologo=true&enhance=true','Plumbago indica','Bangkok, Thailand','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Plumbago%20indica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=58696&nologo=true&enhance=true" alt="Leadwort" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bangkok, Thailand</span>
               <span class="card-date">2026-08-02 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Plumbago indica</div>
@@ -400,15 +394,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=98342&nologo=true&enhance=true','Annona muricata','Accra, Ghana','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=98342&nologo=true&enhance=true" alt="Soursop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Accra, Ghana</span>
               <span class="card-date">2026-08-01 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Annona muricata</div>
@@ -421,15 +414,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Papaver%20rhoeas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=46098&nologo=true&enhance=true','Papaver rhoeas','Istanbul, Turkey','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Papaver%20rhoeas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=46098&nologo=true&enhance=true" alt="Poppy" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Istanbul, Turkey</span>
               <span class="card-date">2026-08-01 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Papaver rhoeas</div>
@@ -442,15 +434,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cassia%20auriculata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=17105&nologo=true&enhance=true','Cassia auriculata','Bangalore, India','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cassia%20auriculata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=17105&nologo=true&enhance=true" alt="Tanner's Cassia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bangalore, India</span>
               <span class="card-date">2026-08-01 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Cassia auriculata</div>
@@ -463,15 +454,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Taraxacum%20officinale%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=84421&nologo=true&enhance=true','Taraxacum officinale','Amsterdam, Netherlands','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Taraxacum%20officinale%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=84421&nologo=true&enhance=true" alt="Dandelion" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Amsterdam, Netherlands</span>
               <span class="card-date">2026-08-01 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Taraxacum officinale</div>
@@ -484,15 +474,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15944&nologo=true&enhance=true','Ziziphus jujuba','Yazd, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15944&nologo=true&enhance=true" alt="Jujube" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Yazd, Iran</span>
               <span class="card-date">2026-08-01 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ziziphus jujuba</div>
@@ -505,15 +494,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leucadendron%20argenteum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31223&nologo=true&enhance=true','Leucadendron argenteum','Cape Town, South Africa','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leucadendron%20argenteum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31223&nologo=true&enhance=true" alt="Silver Tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cape Town, South Africa</span>
               <span class="card-date">2026-08-01 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Leucadendron argenteum</div>
@@ -526,15 +514,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Espeletia%20pycnophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71283&nologo=true&enhance=true','Espeletia pycnophylla','Bogota, Colombia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Espeletia%20pycnophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71283&nologo=true&enhance=true" alt="Frailejón" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bogota, Colombia</span>
               <span class="card-date">2026-08-01 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Espeletia pycnophylla</div>
@@ -547,15 +534,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20sabdariffa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=72274&nologo=true&enhance=true','Hibiscus sabdariffa','Hanoi, Vietnam','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20sabdariffa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=72274&nologo=true&enhance=true" alt="Roselle" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Hanoi, Vietnam</span>
               <span class="card-date">2026-08-01 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hibiscus sabdariffa</div>
@@ -568,15 +554,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66674&nologo=true&enhance=true','Campanula medium','Oslo, Norway','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66674&nologo=true&enhance=true" alt="Canterbury Bell" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Oslo, Norway</span>
               <span class="card-date">2026-08-01 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Campanula medium</div>
@@ -589,15 +574,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lomandra%20longifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85832&nologo=true&enhance=true','Lomandra longifolia','Sydney, Australia','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lomandra%20longifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85832&nologo=true&enhance=true" alt="Mat Rush" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Sydney, Australia</span>
               <span class="card-date">2026-08-01 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Lomandra longifolia</div>
@@ -610,15 +594,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Catharanthus%20roseus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87465&nologo=true&enhance=true','Catharanthus roseus','Mumbai, India','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Catharanthus%20roseus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87465&nologo=true&enhance=true" alt="Madagascar Periwinkle" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mumbai, India</span>
               <span class="card-date">2026-08-01 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Catharanthus roseus</div>
@@ -631,15 +614,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=50366&nologo=true&enhance=true','Cordyline australis','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=50366&nologo=true&enhance=true" alt="Cabbage Tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-08-01 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Cordyline australis</div>
@@ -652,15 +634,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20coccinea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47764&nologo=true&enhance=true','Dahlia coccinea','Mexico City, Mexico','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20coccinea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47764&nologo=true&enhance=true" alt="Mexican Dahlia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mexico City, Mexico</span>
               <span class="card-date">2026-07-31 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Dahlia coccinea</div>
@@ -673,15 +654,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Echinophora%20platyloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30366&nologo=true&enhance=true','Echinophora platyloba','Mashhad, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Echinophora%20platyloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30366&nologo=true&enhance=true" alt="Parndeh" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mashhad, Iran</span>
               <span class="card-date">2026-07-31 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Echinophora platyloba</div>
@@ -694,15 +674,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Bougainvillea%20glabra%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=63659&nologo=true&enhance=true','Bougainvillea glabra','Karachi, Pakistan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Bougainvillea%20glabra%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=63659&nologo=true&enhance=true" alt="Paper Flower" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Karachi, Pakistan</span>
               <span class="card-date">2026-07-31 18:35</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Bougainvillea glabra</div>
@@ -715,15 +694,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Catharanthus%20roseus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=31874&nologo=true&enhance=true','Catharanthus roseus','Bangalore, India','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Catharanthus%20roseus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=31874&nologo=true&enhance=true" alt="Madagascar Periwinkle" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bangalore, India</span>
               <span class="card-date">2026-07-31 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Catharanthus roseus</div>
@@ -736,15 +714,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=22343&nologo=true&enhance=true','Digitalis purpurea','Amsterdam, Netherlands','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=22343&nologo=true&enhance=true" alt="Foxglove" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Amsterdam, Netherlands</span>
               <span class="card-date">2026-07-31 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Digitalis purpurea</div>
@@ -757,15 +734,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=12160&nologo=true&enhance=true','Begonia semperflorens','Bogota, Colombia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=12160&nologo=true&enhance=true" alt="Everblooming Begonia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bogota, Colombia</span>
               <span class="card-date">2026-07-31 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Begonia semperflorens</div>
@@ -778,15 +754,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20nilotica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=90924&nologo=true&enhance=true','Acacia nilotica','Cairo, Egypt','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20nilotica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=90924&nologo=true&enhance=true" alt="Nile Acacia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cairo, Egypt</span>
               <span class="card-date">2026-07-31 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Acacia nilotica</div>
@@ -799,15 +774,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pelargonium%20cucullatum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64320&nologo=true&enhance=true','Pelargonium cucullatum','Cape Town, South Africa','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pelargonium%20cucullatum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64320&nologo=true&enhance=true" alt="Wildemalva" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cape Town, South Africa</span>
               <span class="card-date">2026-07-31 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pelargonium cucullatum</div>
@@ -820,15 +794,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calotropis%20gigantea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=82648&nologo=true&enhance=true','Calotropis gigantea','Mumbai, India','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calotropis%20gigantea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=82648&nologo=true&enhance=true" alt="Giant Milkweed" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mumbai, India</span>
               <span class="card-date">2026-07-31 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Calotropis gigantea</div>
@@ -841,15 +814,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=17501&nologo=true&enhance=true','Digitalis purpurea','Istanbul, Turkey','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=17501&nologo=true&enhance=true" alt="Foxglove" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Istanbul, Turkey</span>
               <span class="card-date">2026-07-31 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Digitalis purpurea</div>
@@ -862,15 +834,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pistacia%20atlantica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=15327&nologo=true&enhance=true','Pistacia atlantica','Mashhad, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pistacia%20atlantica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=15327&nologo=true&enhance=true" alt="Atlantic pistachio" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mashhad, Iran</span>
               <span class="card-date">2026-07-31 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pistacia atlantica</div>
@@ -883,15 +854,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=25825&nologo=true&enhance=true','Ziziphus jujuba','Yazd, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=25825&nologo=true&enhance=true" alt="Jujube" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Yazd, Iran</span>
               <span class="card-date">2026-07-31 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ziziphus jujuba</div>
@@ -904,15 +874,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45066&nologo=true&enhance=true','Leptinella squalida','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45066&nologo=true&enhance=true" alt="Brass Buttons" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-07-30 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Leptinella squalida</div>
@@ -925,15 +894,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=40570&nologo=true&enhance=true','Hibiscus mutabilis','Kuala Lumpur, Malaysia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=40570&nologo=true&enhance=true" alt="Cotton Rose" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kuala Lumpur, Malaysia</span>
               <span class="card-date">2026-07-30 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hibiscus mutabilis</div>
@@ -946,15 +914,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=95386&nologo=true&enhance=true','Peganum harmala','Tabriz, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=95386&nologo=true&enhance=true" alt="Syrian Rue" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tabriz, Iran</span>
               <span class="card-date">2026-07-30 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peganum harmala</div>
@@ -967,15 +934,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Henna%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66230&nologo=true&enhance=true','Lawsonia inermis','Lahore, Pakistan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Henna%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=66230&nologo=true&enhance=true" alt="Henna" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lahore, Pakistan</span>
               <span class="card-date">2026-07-30 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Lawsonia inermis</div>
@@ -988,15 +954,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=27404&nologo=true&enhance=true','Annona muricata','Lagos, Nigeria','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=27404&nologo=true&enhance=true" alt="Soursop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lagos, Nigeria</span>
               <span class="card-date">2026-07-30 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Annona muricata</div>
@@ -1009,15 +974,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Neem%20tree%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=46217&nologo=true&enhance=true','Azadirachta indica','Karachi, Pakistan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Neem%20tree%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=46217&nologo=true&enhance=true" alt="Neem tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Karachi, Pakistan</span>
               <span class="card-date">2026-07-30 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Azadirachta indica</div>
@@ -1030,15 +994,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20pimpinellifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94572&nologo=true&enhance=true','Rosa pimpinellifolia','Tbilisi, Georgia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20pimpinellifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94572&nologo=true&enhance=true" alt="Burnet Rose" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tbilisi, Georgia</span>
               <span class="card-date">2026-07-30 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Rosa pimpinellifolia</div>
@@ -1051,15 +1014,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clematis%20terniflora%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=53188&nologo=true&enhance=true','Clematis terniflora','Kyoto, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clematis%20terniflora%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=53188&nologo=true&enhance=true" alt="Sweet Autumn Clematis" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kyoto, Japan</span>
               <span class="card-date">2026-07-30 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Clematis terniflora</div>
@@ -1072,15 +1034,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Alpine%20Bearberry%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=78876&nologo=true&enhance=true','Arctostaphylos alpina','Reykjavik, Iceland','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Alpine%20Bearberry%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=78876&nologo=true&enhance=true" alt="Alpine Bearberry" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Reykjavik, Iceland</span>
               <span class="card-date">2026-07-30 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Arctostaphylos alpina</div>
@@ -1093,15 +1054,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=78063&nologo=true&enhance=true','Annona muricata','Accra, Ghana','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=78063&nologo=true&enhance=true" alt="Soursop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Accra, Ghana</span>
               <span class="card-date">2026-07-30 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Annona muricata</div>
@@ -1114,15 +1074,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Eucalyptus%20globulus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=68174&nologo=true&enhance=true','Eucalyptus globulus','Nairobi, Kenya','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Eucalyptus%20globulus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=68174&nologo=true&enhance=true" alt="Tasmanian Blue Gum" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Nairobi, Kenya</span>
               <span class="card-date">2026-07-30 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Eucalyptus globulus</div>
@@ -1135,15 +1094,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pegrum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=99710&nologo=true&enhance=true','Pegrum harmala','Mashhad, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pegrum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=99710&nologo=true&enhance=true" alt="Syrian Rue" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mashhad, Iran</span>
               <span class="card-date">2026-07-30 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pegrum harmala</div>
@@ -1156,15 +1114,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31229&nologo=true&enhance=true','Peumus boldus','Santiago, Chile','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31229&nologo=true&enhance=true" alt="Boldo" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Santiago, Chile</span>
               <span class="card-date">2026-07-29 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peumus boldus</div>
@@ -1177,15 +1134,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Houttuynia%20cordata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=51076&nologo=true&enhance=true','Houttuynia cordata','Chengdu, China','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Houttuynia%20cordata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=51076&nologo=true&enhance=true" alt="Fish Mint" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Chengdu, China</span>
               <span class="card-date">2026-07-29 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Houttuynia cordata</div>
@@ -1198,15 +1154,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=74326&nologo=true&enhance=true','Begonia semperflorens','Bogota, Colombia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=74326&nologo=true&enhance=true" alt="Wax Begonia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bogota, Colombia</span>
               <span class="card-date">2026-07-29 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Begonia semperflorens</div>
@@ -1219,15 +1174,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20rugosa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94528&nologo=true&enhance=true','Rosa rugosa','Almaty, Kazakhstan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20rugosa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94528&nologo=true&enhance=true" alt="Japanese Rose" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Almaty, Kazakhstan</span>
               <span class="card-date">2026-07-29 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Rosa rugosa</div>
@@ -1240,15 +1194,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Melissa%20officinalis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=79278&nologo=true&enhance=true','Melissa officinalis','Vienna, Austria','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Melissa%20officinalis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=79278&nologo=true&enhance=true" alt="Lemon Balm" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Vienna, Austria</span>
               <span class="card-date">2026-07-29 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Melissa officinalis</div>
@@ -1261,15 +1214,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Schinus%20molle%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94&nologo=true&enhance=true','Schinus molle','Lima, Peru','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Schinus%20molle%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94&nologo=true&enhance=true" alt="Peruvian Pepper Tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lima, Peru</span>
               <span class="card-date">2026-07-29 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Schinus molle</div>
@@ -1282,15 +1234,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pentaclethra%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=37649&nologo=true&enhance=true','Pentaclethra macrophylla','Lagos, Nigeria','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pentaclethra%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=37649&nologo=true&enhance=true" alt="African oil bean" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lagos, Nigeria</span>
               <span class="card-date">2026-07-29 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pentaclethra macrophylla</div>
@@ -1303,15 +1254,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Bellis%20perennis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=37016&nologo=true&enhance=true','Bellis perennis','Prague, Czech Republic','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Bellis%20perennis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=37016&nologo=true&enhance=true" alt="Daisy" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Prague, Czech Republic</span>
               <span class="card-date">2026-07-29 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Bellis perennis</div>
@@ -1324,15 +1274,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphora%20tenuior%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=36409&nologo=true&enhance=true','Ziziphora tenuior','Tehran, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphora%20tenuior%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=36409&nologo=true&enhance=true" alt="Iranian hyssop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tehran, Iran</span>
               <span class="card-date">2026-07-29 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ziziphora tenuior</div>
@@ -1345,15 +1294,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47198&nologo=true&enhance=true','Cordyline australis','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cordyline%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47198&nologo=true&enhance=true" alt="New Zealand cabbage tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-07-29 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Cordyline australis</div>
@@ -1366,15 +1314,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=51470&nologo=true&enhance=true','Lavandula stoechas','Lisbon, Portugal','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=51470&nologo=true&enhance=true" alt="Spanish lavender" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lisbon, Portugal</span>
               <span class="card-date">2026-07-29 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Lavandula stoechas</div>
@@ -1387,15 +1334,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nerium%20oleander%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=63627&nologo=true&enhance=true','Nerium oleander','Istanbul, Turkey','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nerium%20oleander%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=63627&nologo=true&enhance=true" alt="Oleander" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Istanbul, Turkey</span>
               <span class="card-date">2026-07-29 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Nerium oleander</div>
@@ -1408,15 +1354,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ginkgo%20biloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=7607&nologo=true&enhance=true','Ginkgo biloba','Kyoto, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ginkgo%20biloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=7607&nologo=true&enhance=true" alt="Maidenhair Tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kyoto, Japan</span>
               <span class="card-date">2026-07-28 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ginkgo biloba</div>
@@ -1429,15 +1374,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tessaria%20integrifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=7568&nologo=true&enhance=true','Tessaria integrifolia','Buenos Aires, Argentina','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tessaria%20integrifolia%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=7568&nologo=true&enhance=true" alt="Tessaria" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Buenos Aires, Argentina</span>
               <span class="card-date">2026-07-28 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Tessaria integrifolia</div>
@@ -1450,15 +1394,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Eucalyptus%20camaldulensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=11121&nologo=true&enhance=true','Eucalyptus camaldulensis','Isfahan, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Eucalyptus%20camaldulensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=11121&nologo=true&enhance=true" alt="River Red Gum" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Isfahan, Iran</span>
               <span class="card-date">2026-07-28 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Eucalyptus camaldulensis</div>
@@ -1471,15 +1414,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20nilotica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=93977&nologo=true&enhance=true','Acacia nilotica','Cairo, Egypt','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20nilotica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=93977&nologo=true&enhance=true" alt="Nile Acacia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cairo, Egypt</span>
               <span class="card-date">2026-07-28 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Acacia nilotica</div>
@@ -1492,15 +1434,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cannabis%20sativa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=59137&nologo=true&enhance=true','Cannabis sativa','Lahore, Pakistan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cannabis%20sativa%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=59137&nologo=true&enhance=true" alt="Hemp" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lahore, Pakistan</span>
               <span class="card-date">2026-07-28 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Cannabis sativa</div>
@@ -1513,15 +1454,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=27557&nologo=true&enhance=true','Annona muricata','Accra, Ghana','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=27557&nologo=true&enhance=true" alt="Soursop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Accra, Ghana</span>
               <span class="card-date">2026-07-28 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Annona muricata</div>
@@ -1534,15 +1474,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=13393&nologo=true&enhance=true','Artemisia absinthium','Almaty, Kazakhstan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=13393&nologo=true&enhance=true" alt="Wormwood" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Almaty, Kazakhstan</span>
               <span class="card-date">2026-07-28 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Artemisia absinthium</div>
@@ -1555,15 +1494,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calotropis%20procera%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=14181&nologo=true&enhance=true','Calotropis procera','Karachi, Pakistan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calotropis%20procera%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=14181&nologo=true&enhance=true" alt="Giant Milkweed" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Karachi, Pakistan</span>
               <span class="card-date">2026-07-28 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Calotropis procera</div>
@@ -1576,15 +1514,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Taraxacum%20officinale%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=96277&nologo=true&enhance=true','Taraxacum officinale','Amsterdam, Netherlands','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Taraxacum%20officinale%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=96277&nologo=true&enhance=true" alt="Dandelion" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Amsterdam, Netherlands</span>
               <span class="card-date">2026-07-28 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Taraxacum officinale</div>
@@ -1597,15 +1534,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=75331&nologo=true&enhance=true','Leptinella squalida','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=75331&nologo=true&enhance=true" alt="New Zealand Brass Button" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-07-28 04:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Leptinella squalida</div>
@@ -1618,15 +1554,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=19386&nologo=true&enhance=true','Peganum harmala','Shiraz, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=19386&nologo=true&enhance=true" alt="Syrian Rue" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Shiraz, Iran</span>
               <span class="card-date">2026-07-28 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peganum harmala</div>
@@ -1639,15 +1574,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=2674&nologo=true&enhance=true','Digitalis purpurea','Istanbul, Turkey','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Digitalis%20purpurea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=2674&nologo=true&enhance=true" alt="Foxglove" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Istanbul, Turkey</span>
               <span class="card-date">2026-07-28 00:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Digitalis purpurea</div>
@@ -1660,15 +1594,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Echinophora%20platyloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43279&nologo=true&enhance=true','Echinophora platyloba','Tehran, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Echinophora%20platyloba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43279&nologo=true&enhance=true" alt="Parisis" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tehran, Iran</span>
               <span class="card-date">2026-07-27 22:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Echinophora platyloba</div>
@@ -1681,15 +1614,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15865&nologo=true&enhance=true','Hydrangea macrophylla','Tokyo, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15865&nologo=true&enhance=true" alt="Bigleaf Hydrangea" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tokyo, Japan</span>
               <span class="card-date">2026-07-27 20:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hydrangea macrophylla</div>
@@ -1702,15 +1634,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=54014&nologo=true&enhance=true','Angelica archangelica','Reykjavik, Iceland','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=54014&nologo=true&enhance=true" alt="Garden Angelica" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Reykjavik, Iceland</span>
               <span class="card-date">2026-07-27 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Angelica archangelica</div>
@@ -1723,15 +1654,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clerodendrum%20trichotomum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45568&nologo=true&enhance=true','Clerodendrum trichotomum','Kyoto, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clerodendrum%20trichotomum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45568&nologo=true&enhance=true" alt="Harlequin Glory Bower" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kyoto, Japan</span>
               <span class="card-date">2026-07-27 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Clerodendrum trichotomum</div>
@@ -1744,15 +1674,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=35588&nologo=true&enhance=true','Ziziphus jujuba','Yazd, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=35588&nologo=true&enhance=true" alt="Jujube" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Yazd, Iran</span>
               <span class="card-date">2026-07-27 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Ziziphus jujuba</div>
@@ -1765,15 +1694,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Vancouveria%20hexandra%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=88944&nologo=true&enhance=true','Vancouveria hexandra','Vancouver, Canada','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Vancouveria%20hexandra%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=88944&nologo=true&enhance=true" alt="Inside-out Flower" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Vancouver, Canada</span>
               <span class="card-date">2026-07-27 12:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Vancouveria hexandra</div>
@@ -1786,15 +1714,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15019&nologo=true&enhance=true','Lavandula stoechas','Lisbon, Portugal','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=15019&nologo=true&enhance=true" alt="Spanish lavender" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lisbon, Portugal</span>
               <span class="card-date">2026-07-27 10:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Lavandula stoechas</div>
@@ -1807,15 +1734,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20coccinea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64115&nologo=true&enhance=true','Dahlia coccinea','Mexico City, Mexico','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20coccinea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=64115&nologo=true&enhance=true" alt="Mexican Dahlia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Mexico City, Mexico</span>
               <span class="card-date">2026-07-27 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Dahlia coccinea</div>
@@ -1828,15 +1754,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Olea%20europaea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=38439&nologo=true&enhance=true','Olea europaea','Marrakech, Morocco','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Olea%20europaea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=38439&nologo=true&enhance=true" alt="Olive tree" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Marrakech, Morocco</span>
               <span class="card-date">2026-07-27 06:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Olea europaea</div>
@@ -1849,15 +1774,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nicotiana%20glauca%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=74840&nologo=true&enhance=true','Nicotiana glauca','Lima, Peru','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nicotiana%20glauca%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=74840&nologo=true&enhance=true" alt="Tree Tobacco" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lima, Peru</span>
               <span class="card-date">2026-07-27 04:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Nicotiana glauca</div>
@@ -1870,15 +1794,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43564&nologo=true&enhance=true','Annona muricata','Accra, Ghana','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43564&nologo=true&enhance=true" alt="Soursop" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Accra, Ghana</span>
               <span class="card-date">2026-07-27 02:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Annona muricata</div>
@@ -1891,15 +1814,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30751&nologo=true&enhance=true','Hibiscus rosa-sinensis','Bangkok, Thailand','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30751&nologo=true&enhance=true" alt="Hibiscus" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bangkok, Thailand</span>
               <span class="card-date">2026-07-27 00:32</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hibiscus rosa-sinensis</div>
@@ -1912,15 +1834,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31615&nologo=true&enhance=true','Begonia semperflorens','Bogota, Colombia','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31615&nologo=true&enhance=true" alt="Everblooming Begonia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Bogota, Colombia</span>
               <span class="card-date">2026-07-26 22:32</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Begonia semperflorens</div>
@@ -1933,15 +1854,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87405&nologo=true&enhance=true','Hydrangea macrophylla','Kyoto, Japan','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87405&nologo=true&enhance=true" alt="Bigleaf Hydrangea" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Kyoto, Japan</span>
               <span class="card-date">2026-07-26 20:32</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Hydrangea macrophylla</div>
@@ -1954,15 +1874,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=55143&nologo=true&enhance=true','Peganum harmala','Tabriz, Iran','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=55143&nologo=true&enhance=true" alt="Syrian Rue" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Tabriz, Iran</span>
               <span class="card-date">2026-07-26 18:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peganum harmala</div>
@@ -1975,15 +1894,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=28786&nologo=true&enhance=true','Leptinella squalida','Auckland, New Zealand','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=28786&nologo=true&enhance=true" alt="Brass Buttons" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Auckland, New Zealand</span>
               <span class="card-date">2026-07-26 16:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Leptinella squalida</div>
@@ -1996,15 +1914,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pelargonium%20cucullatum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=70943&nologo=true&enhance=true','Pelargonium cucullatum','Cape Town, South Africa','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Pelargonium%20cucullatum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=70943&nologo=true&enhance=true" alt="Wildemalva" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Cape Town, South Africa</span>
               <span class="card-date">2026-07-26 14:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Pelargonium cucullatum</div>
@@ -2017,15 +1934,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=65263&nologo=true&enhance=true','Angelica archangelica','Reykjavik, Iceland','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=65263&nologo=true&enhance=true" alt="Garden Angelica" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Reykjavik, Iceland</span>
               <span class="card-date">2026-07-26 12:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Angelica archangelica</div>
@@ -2038,15 +1954,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Magnolia%20delavayi%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=25594&nologo=true&enhance=true','Magnolia delavayi','Chengdu, China','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Magnolia%20delavayi%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=25594&nologo=true&enhance=true" alt="Delavay's Magnolia" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Chengdu, China</span>
               <span class="card-date">2026-07-26 10:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Magnolia delavayi</div>
@@ -2059,15 +1974,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Sambucus%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=9548&nologo=true&enhance=true','Sambucus australis','Buenos Aires, Argentina','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Sambucus%20australis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=9548&nologo=true&enhance=true" alt="Elderberry" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Buenos Aires, Argentina</span>
               <span class="card-date">2026-07-26 08:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Sambucus australis</div>
@@ -2080,15 +1994,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Newbouldia%20laevis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87286&nologo=true&enhance=true','Newbouldia laevis','Lagos, Nigeria','Summer')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Newbouldia%20laevis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87286&nologo=true&enhance=true" alt="Tree Jasmine" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Lagos, Nigeria</span>
               <span class="card-date">2026-07-26 06:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Newbouldia laevis</div>
@@ -2101,15 +2014,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=58584&nologo=true&enhance=true','Lantana camara','Nairobi, Kenya','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=58584&nologo=true&enhance=true" alt="West Indian Lantana" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Nairobi, Kenya</span>
               <span class="card-date">2026-07-26 04:31</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Lantana camara</div>
@@ -2122,15 +2034,14 @@
             </div>
           </div>
         </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=75103&nologo=true&enhance=true','Peumus boldus','Santiago, Chile','Winter')">
+        <div class="card">
           <div class="card-img">
             <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peumus%20boldus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=75103&nologo=true&enhance=true" alt="Boldo" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
+              onerror="this.parentElement.style.background='#1a1a14'"/>
             <div class="card-overlay">
               <span class="card-city">Santiago, Chile</span>
               <span class="card-date">2026-07-26 02:30</span>
             </div>
-            <div class="card-zoom">⛶</div>
           </div>
           <div class="card-info">
             <div class="card-latin">Peumus boldus</div>
@@ -2142,54 +2053,7 @@
               <span class="tag">13°C</span>
             </div>
           </div>
-        </div>
-        <div class="card" onclick="openFS('https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Espeletia%20pycnophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=56998&nologo=true&enhance=true','Espeletia pycnophylla','Bogota, Colombia','Summer')">
-          <div class="card-img">
-            <img src="https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Espeletia%20pycnophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=56998&nologo=true&enhance=true" alt="Frailejón" loading="lazy"
-              onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src=this.src+'&r='+Date.now()}else{this.style.opacity='0'}"/>
-            <div class="card-overlay">
-              <span class="card-city">Bogota, Colombia</span>
-              <span class="card-date">2026-07-26 00:32</span>
-            </div>
-            <div class="card-zoom">⛶</div>
-          </div>
-          <div class="card-info">
-            <div class="card-latin">Espeletia pycnophylla</div>
-            <div class="card-common">FRAILEJÓN</div>
-            <div class="card-note">Blooming in Andean heights</div>
-            <div class="card-tags">
-              <span class="tag">Flowering</span>
-              <span class="tag">Summer</span>
-              <span class="tag">14°C</span>
-            </div>
-          </div>
         </div></div>
-
-<div class="fs-overlay" id="fsOverlay">
-  <button class="fs-close" onclick="closeFS()">✕</button>
-  <img class="fs-img" id="fsImg" src="" alt=""/>
-  <div class="fs-info">
-    <div class="fs-latin" id="fsLatin"></div>
-    <div class="fs-city" id="fsCity"></div>
-  </div>
-</div>
-<script>
-function openFS(url, latin, city, season){
-  document.getElementById('fsImg').src = url;
-  document.getElementById('fsLatin').textContent = latin;
-  document.getElementById('fsCity').textContent = city + ' · ' + season;
-  document.getElementById('fsOverlay').classList.add('active');
-}
-function closeFS(){
-  document.getElementById('fsOverlay').classList.remove('active');
-}
-document.getElementById('fsOverlay').addEventListener('click', function(e){
-  if(e.target === this) closeFS();
-});
-document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape') closeFS();
-});
-</script>
 <!-- Premium Modal -->
 <div class="premium-modal" id="premiumModal">
   <div class="premium-box">
