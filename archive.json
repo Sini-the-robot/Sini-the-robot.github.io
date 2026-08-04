@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-04 04:30",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "latin": "Rumex nervosus",
+    "common": "Veined Dock",
+    "note": "Unfurls leaves in morning dew",
+    "phenology": "Flowering",
+    "compound_name": "Rutin",
+    "compound": "Rare flavonoid with antioxidant properties",
+    "season": "Summer",
+    "temp": 12,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Veined%20Dock%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=57688&nologo=true&t=1785817843"
+  },
+  {
     "date": "2026-08-04 02:30",
     "city": "Sydney",
     "country": "Australia",
@@ -1483,20 +1498,5 @@
     "temp": 24,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Annona%20muricata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43564&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-27 00:32",
-    "city": "Bangkok",
-    "country": "Thailand",
-    "latin": "Hibiscus rosa-sinensis",
-    "common": "Hibiscus",
-    "note": "Unfurling vibrant petals",
-    "phenology": "Flowering",
-    "compound_name": "Hibiscin",
-    "compound": "Rare anthocyanin pigment",
-    "season": "Summer",
-    "temp": 27,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30751&nologo=true&enhance=true"
   }
 ]
