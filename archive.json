@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-04 00:30",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "latin": "Dahlia coccinea",
+    "common": "Mexican Dahlia",
+    "note": "Unfurls vibrant blooms",
+    "phenology": "Flowering",
+    "compound_name": "Inulin",
+    "compound": "Rich in fructose",
+    "season": "Summer",
+    "temp": 24,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20coccinea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=38442&nologo=true&t=1785803438"
+  },
+  {
     "date": "2026-08-03 22:30",
     "city": "Nairobi",
     "country": "Kenya",
@@ -1483,20 +1498,5 @@
     "temp": 15,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Begonia%20semperflorens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=31615&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-26 20:32",
-    "city": "Kyoto",
-    "country": "Japan",
-    "latin": "Hydrangea macrophylla",
-    "common": "Bigleaf Hydrangea",
-    "note": "Blooming vibrantly in summer rains",
-    "phenology": "Flowering",
-    "compound_name": "Quercetin",
-    "compound": "Powerful antioxidant properties",
-    "season": "Summer",
-    "temp": 25,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hydrangea%20macrophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87405&nologo=true&enhance=true"
   }
 ]
