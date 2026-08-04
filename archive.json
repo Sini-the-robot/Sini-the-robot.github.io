@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-04 20:30",
+    "city": "Sydney",
+    "country": "Australia",
+    "latin": "Acacia suaveolens",
+    "common": "Sweet Wattle",
+    "note": "Dormant, waiting for warmth",
+    "phenology": "Dormant",
+    "compound_name": "Rutin",
+    "compound": "Powerful antioxidant properties",
+    "season": "Winter",
+    "temp": 7,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20suaveolens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=30553&nologo=true&t=1785875450"
+  },
+  {
     "date": "2026-08-04 18:30",
     "city": "Prague",
     "country": "Czech Republic",
@@ -1483,20 +1498,5 @@
     "temp": 17,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Angelica%20archangelica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=54014&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-27 16:30",
-    "city": "Kyoto",
-    "country": "Japan",
-    "latin": "Clerodendrum trichotomum",
-    "common": "Harlequin Glory Bower",
-    "note": "Blossoming with fragrant white flowers",
-    "phenology": "Flowering",
-    "compound_name": "Ursolic acid",
-    "compound": "Powerful antioxidant properties",
-    "season": "Summer",
-    "temp": 26,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clerodendrum%20trichotomum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=45568&nologo=true&enhance=true"
   }
 ]
