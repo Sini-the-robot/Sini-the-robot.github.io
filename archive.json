@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-05 12:30",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "latin": "Impatiens walleriana",
+    "common": "Busy Lizzie",
+    "note": "Delicate white blooms unfold amidst raindrops",
+    "phenology": "Flowering",
+    "compound_name": "2-Hydroxy-1,4-naphthoquinone",
+    "compound": "Rare antioxidant properties found within",
+    "season": "Summer",
+    "temp": 26,
+    "condition": "Rainy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Impatiens%20walleriana%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85724&nologo=true&t=1785933044"
+  },
+  {
     "date": "2026-08-05 10:30",
     "city": "Nairobi",
     "country": "Kenya",
@@ -1483,20 +1498,5 @@
     "temp": 29,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=13393&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-28 08:30",
-    "city": "Karachi",
-    "country": "Pakistan",
-    "latin": "Calotropis procera",
-    "common": "Giant Milkweed",
-    "note": "Blooming under partly cloudy skies",
-    "phenology": "Flowering",
-    "compound_name": "Cardenolide",
-    "compound": "Toxic compound rare in nature",
-    "season": "Summer",
-    "temp": 32,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Calotropis%20procera%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=14181&nologo=true&enhance=true"
   }
 ]
