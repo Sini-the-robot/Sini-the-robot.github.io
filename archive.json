@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-07 14:30",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "latin": "Leptinella squalida",
+    "common": "Bronze Buttons",
+    "note": "Unfurling delicate winter foliage",
+    "phenology": "Dormant",
+    "compound_name": "Flavonoid",
+    "compound": "Powerful antioxidant properties",
+    "season": "Winter",
+    "temp": 8,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squalida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=25210&nologo=true&t=1786113054"
+  },
+  {
     "date": "2026-08-07 12:30",
     "city": "Cape Town",
     "country": "South Africa",
@@ -1483,20 +1498,5 @@
     "temp": 33,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Clematis%20terniflora%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=53188&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-07-30 06:30",
-    "city": "Reykjavik",
-    "country": "Iceland",
-    "latin": "Arctostaphylos alpina",
-    "common": "Alpine Bearberry",
-    "note": "Blooming under cloudy skies",
-    "phenology": "Flowering",
-    "compound_name": "Arbutin",
-    "compound": "Rare glucoside found",
-    "season": "Summer",
-    "temp": 8,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Alpine%20Bearberry%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=78876&nologo=true&enhance=true"
   }
 ]
