@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-10 12:30",
+    "city": "Mumbai",
+    "country": "India",
+    "latin": "Catharanthus roseus",
+    "common": "Madagascar Periwinkle",
+    "note": "Unfurling petals in morning dew",
+    "phenology": "Flowering",
+    "compound_name": "Vincristine",
+    "compound": "Rare due to low yield",
+    "season": "Summer",
+    "temp": 28,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Madagascar%20Periwinkle%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=92929&nologo=true&t=1786365048"
+  },
+  {
     "date": "2026-08-10 10:30",
     "city": "Hanoi",
     "country": "Vietnam",
@@ -1483,20 +1498,5 @@
     "temp": 34,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85681&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-08-02 04:30",
-    "city": "Almaty",
-    "country": "Kazakhstan",
-    "latin": "Artemisia absinthium",
-    "common": "Wormwood",
-    "note": "Blooming under clear sky",
-    "phenology": "Flowering",
-    "compound_name": "Thujone",
-    "compound": "Rare neurotoxic compound",
-    "season": "Summer",
-    "temp": 32,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Artemisia%20absinthium%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=67818&nologo=true&enhance=true"
   }
 ]
