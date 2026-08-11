@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-11 06:30",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "latin": "Solanum tuberosum",
+    "common": "Papa",
+    "note": "Dormant underground tubers wait",
+    "phenology": "Dormant",
+    "compound_name": "Solanine",
+    "compound": "Toxicity makes it rare",
+    "season": "Winter",
+    "temp": 8,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Solanum%20tuberosum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=48966&nologo=true&t=1786429848"
+  },
+  {
     "date": "2026-08-11 04:30",
     "city": "Marrakech",
     "country": "Morocco",
@@ -1483,20 +1498,5 @@
     "temp": 20,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Tropaeolum%20peruvianum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=62684&nologo=true&enhance=true"
-  },
-  {
-    "date": "2026-08-02 22:30",
-    "city": "Cairo",
-    "country": "Egypt",
-    "latin": "Ziziphus jujuba",
-    "common": "Jujube",
-    "note": "Blossoming under clear sky",
-    "phenology": "Flowering",
-    "compound_name": "Jujuboside",
-    "compound": "Rare saponin with adaptogenic properties",
-    "season": "Summer",
-    "temp": 27,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Ziziphus%20jujuba%2C%20traditional%20ukiyo-e%20woodblock%20print%20style?width=800&height=920&seed=22206&nologo=true&enhance=true"
   }
 ]
