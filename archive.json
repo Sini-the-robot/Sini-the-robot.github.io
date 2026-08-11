@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-11 22:30",
+    "city": "Cairo",
+    "country": "Egypt",
+    "latin": "Acacia tortilis",
+    "common": "Umbrella Thorn",
+    "note": "Thriving under clear desert skies",
+    "phenology": "Flowering",
+    "compound_name": "Tannin",
+    "compound": "Powerful antioxidant properties abound",
+    "season": "Summer",
+    "temp": 29,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20tortilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47635&nologo=true&t=1786487445"
+  },
+  {
     "date": "2026-08-11 20:30",
     "city": "Tbilisi",
     "country": "Georgia",
@@ -1483,20 +1498,5 @@
     "temp": 14,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Citrus%20sinensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=92578&nologo=true&t=1785760245"
-  },
-  {
-    "date": "2026-08-03 10:30",
-    "city": "Sydney",
-    "country": "Australia",
-    "latin": "Acacia suaveolens",
-    "common": "Sweet Wattle",
-    "note": "Delicate yellow blooms unfold",
-    "phenology": "Flowering",
-    "compound_name": "Rutin",
-    "compound": "Rare flavonoid with potent antioxidant",
-    "season": "Winter",
-    "temp": 13,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20suaveolens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=9441&nologo=true&t=1785753039"
   }
 ]
