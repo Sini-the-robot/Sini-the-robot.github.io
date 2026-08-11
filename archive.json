@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-11 20:30",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "latin": "Rosa gallica",
+    "common": "French Rose",
+    "note": "Unfurling petals in warm sunlight",
+    "phenology": "Flowering",
+    "compound_name": "Rose oxide",
+    "compound": "Rare due to difficult extraction",
+    "season": "Summer",
+    "temp": 24,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Rosa%20gallica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=23200&nologo=true&t=1786480239"
+  },
+  {
     "date": "2026-08-11 18:30",
     "city": "Helsinki",
     "country": "Finland",
@@ -1483,20 +1498,5 @@
     "temp": 13,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20suaveolens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=9441&nologo=true&t=1785753039"
-  },
-  {
-    "date": "2026-08-03 08:30",
-    "city": "Bangkok",
-    "country": "Thailand",
-    "latin": "Hibiscus rosa-sinensis",
-    "common": "Chinese Hibiscus",
-    "note": "Unfurling petals in warm sunlight",
-    "phenology": "Flowering",
-    "compound_name": "Hibiscin",
-    "compound": "Rare anthocyanin pigment",
-    "season": "Summer",
-    "temp": 32,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20rosa-sinensis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=35804&nologo=true&t=1785745841"
   }
 ]
