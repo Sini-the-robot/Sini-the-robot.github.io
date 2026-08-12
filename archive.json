@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-12 20:30",
+    "city": "Accra",
+    "country": "Ghana",
+    "latin": "Cajanus cajan",
+    "common": "Pigeon pea",
+    "note": "Unfurls tender shoots in summer's warmth",
+    "phenology": "Flowering",
+    "compound_name": "Cajanin",
+    "compound": "Makes it a potent antioxidant",
+    "season": "Summer",
+    "temp": 24,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cajanus%20cajan%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=48677&nologo=true&t=1786566641"
+  },
+  {
     "date": "2026-08-12 18:30",
     "city": "Tokyo",
     "country": "Japan",
@@ -1483,20 +1498,5 @@
     "temp": 37,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Sambucus%20nigra%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=79248&nologo=true&t=1785839439"
-  },
-  {
-    "date": "2026-08-04 08:30",
-    "city": "Buenos Aires",
-    "country": "Argentina",
-    "latin": "Lantana camara",
-    "common": "West Indian Lantana",
-    "note": "Blooms persist in winter",
-    "phenology": "Flowering",
-    "compound_name": "Oleanolic acid",
-    "compound": "Rare triterpenoid",
-    "season": "Winter",
-    "temp": 12,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=19371&nologo=true&t=1785832237"
   }
 ]
