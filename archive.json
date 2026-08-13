@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-13 14:30",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "latin": "Coffea arabica",
+    "common": "Arabian Coffee",
+    "note": "Blooming in misty morning",
+    "phenology": "Flowering",
+    "compound_name": "Caffeine",
+    "compound": "Rare stimulant in nature",
+    "season": "Summer",
+    "temp": 16,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Coffea%20arabica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=36059&nologo=true&t=1786631441"
+  },
+  {
     "date": "2026-08-13 12:30",
     "city": "Cairo",
     "country": "Egypt",
@@ -1483,20 +1498,5 @@
     "temp": 27,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dandelion%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=22775&nologo=true&t=1785904245"
-  },
-  {
-    "date": "2026-08-05 02:30",
-    "city": "Nairobi",
-    "country": "Kenya",
-    "latin": "Lantana camara",
-    "common": "West Indian Lantana",
-    "note": "Blooming under cloudy skies",
-    "phenology": "Flowering",
-    "compound_name": "Oleanolic acid",
-    "compound": "Rare antioxidant properties found",
-    "season": "Winter",
-    "temp": 13,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=28052&nologo=true&t=1785897050"
   }
 ]
