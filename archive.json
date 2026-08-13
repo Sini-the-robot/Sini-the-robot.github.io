@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-13 12:30",
+    "city": "Cairo",
+    "country": "Egypt",
+    "latin": "Acacia nilotica",
+    "common": "Gum Arabic Tree",
+    "note": "Swaying gently in summer breeze",
+    "phenology": "Flowering",
+    "compound_name": "Arabin",
+    "compound": "Rare polysaccharide with healing",
+    "season": "Summer",
+    "temp": 38,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20nilotica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=80090&nologo=true&t=1786624244"
+  },
+  {
     "date": "2026-08-13 10:30",
     "city": "Lima",
     "country": "Peru",
@@ -1483,20 +1498,5 @@
     "temp": 13,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lantana%20camara%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=28052&nologo=true&t=1785897050"
-  },
-  {
-    "date": "2026-08-05 00:30",
-    "city": "Marrakech",
-    "country": "Morocco",
-    "latin": "Lavandula stoechas",
-    "common": "Spanish lavender",
-    "note": "Dancing in warm breeze",
-    "phenology": "Flowering",
-    "compound_name": "Linalool",
-    "compound": "Rare calming properties",
-    "season": "Summer",
-    "temp": 28,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=97262&nologo=true&t=1785889840"
   }
 ]
