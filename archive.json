@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 16:30",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "latin": "Dahlia variabilis",
+    "common": "Mexican Dahlia",
+    "note": "Unfurling vibrant blooms",
+    "phenology": "Flowering",
+    "compound_name": "Inulin",
+    "compound": "Rich in fructans makes it rare",
+    "season": "Summer",
+    "temp": 20,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20variabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=65062&nologo=true&t=1786725039"
+  },
+  {
     "date": "2026-08-14 14:30",
     "city": "Sydney",
     "country": "Australia",
@@ -1483,20 +1498,5 @@
     "temp": 17,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nuphar%20lutea%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=85228&nologo=true&t=1785997838"
-  },
-  {
-    "date": "2026-08-06 04:30",
-    "city": "Tbilisi",
-    "country": "Georgia",
-    "latin": "Centaurea cyanus",
-    "common": "Cornflower",
-    "note": "Dancing in raindrops",
-    "phenology": "Flowering",
-    "compound_name": "Cynarin",
-    "compound": "Rare antioxidant properties",
-    "season": "Summer",
-    "temp": 23,
-    "condition": "Rainy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cornflower%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94302&nologo=true&t=1785990638"
   }
 ]
