@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 04:30",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "latin": "Coffea arabica",
+    "common": "Arabian coffee",
+    "note": "Blooming in misty highlands",
+    "phenology": "Flowering",
+    "compound_name": "Caffeine",
+    "compound": "Stimulates nervous system",
+    "season": "Summer",
+    "temp": 12,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Coffea%20arabica%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=32702&nologo=true&t=1786681843"
+  },
+  {
     "date": "2026-08-14 02:30",
     "city": "Prague",
     "country": "Czech Republic",
@@ -1483,20 +1498,5 @@
     "temp": 31,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20tortilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=39285&nologo=true&t=1785954647"
-  },
-  {
-    "date": "2026-08-05 16:30",
-    "city": "Chengdu",
-    "country": "China",
-    "latin": "Hibiscus mutabilis",
-    "common": "Cotton Rose",
-    "note": "Unfurling tender petals slowly",
-    "phenology": "Flowering",
-    "compound_name": "Hibiscetin",
-    "compound": "Rare antioxidant properties found",
-    "season": "Summer",
-    "temp": 26,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Hibiscus%20mutabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=87378&nologo=true&t=1785947448"
   }
 ]
