@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 06:30",
+    "city": "Vancouver",
+    "country": "Canada",
+    "latin": "Philadelphus lewisii",
+    "common": "Wild Mock Orange",
+    "note": "Exuding sweet fragrance",
+    "phenology": "Flowering",
+    "compound_name": "Iridoid",
+    "compound": "Rare in flowering plants",
+    "season": "Summer",
+    "temp": 18,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Philadelphus%20lewisii%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=73275&nologo=true&t=1786689040"
+  },
+  {
     "date": "2026-08-14 04:30",
     "city": "Addis Ababa",
     "country": "Ethiopia",
@@ -1483,20 +1498,5 @@
     "temp": 27,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Peganum%20harmala%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=43336&nologo=true&t=1785961851"
-  },
-  {
-    "date": "2026-08-05 18:30",
-    "city": "Cairo",
-    "country": "Egypt",
-    "latin": "Acacia tortilis",
-    "common": "Umbrella Thorn",
-    "note": "Blooming under clear sky",
-    "phenology": "Flowering",
-    "compound_name": "Robinin",
-    "compound": "Rare flavonoid with antioxidant properties",
-    "season": "Summer",
-    "temp": 31,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Acacia%20tortilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=39285&nologo=true&t=1785954647"
   }
 ]
