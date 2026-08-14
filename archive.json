@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 14:30",
+    "city": "Sydney",
+    "country": "Australia",
+    "latin": "Leptinella squallida",
+    "common": "Hairy Creeping Leptinella",
+    "note": "Thriving in damp shade now",
+    "phenology": "Dormant",
+    "compound_name": "Flavonoids",
+    "compound": "Powerful antioxidant properties",
+    "season": "Winter",
+    "temp": 11,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Leptinella%20squallida%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=19084&nologo=true&t=1786717843"
+  },
+  {
     "date": "2026-08-14 12:30",
     "city": "Reykjavik",
     "country": "Iceland",
@@ -1483,20 +1498,5 @@
     "temp": 23,
     "condition": "Rainy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cornflower%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94302&nologo=true&t=1785990638"
-  },
-  {
-    "date": "2026-08-06 02:30",
-    "city": "Nairobi",
-    "country": "Kenya",
-    "latin": "Clausena anisata",
-    "common": "Horsewood",
-    "note": "Unfurling tender leaves",
-    "phenology": "Budding",
-    "compound_name": "Clausanin",
-    "compound": "Rare due to complex synthesis",
-    "season": "Winter",
-    "temp": 12,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Horsewood%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=12479&nologo=true&t=1785983439"
   }
 ]
