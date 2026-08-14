@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 20:30",
+    "city": "Lahore",
+    "country": "Pakistan",
+    "latin": "Cassia fistula",
+    "common": "Golden Shower Tree",
+    "note": "Exuberant blooms under clear sky",
+    "phenology": "Flowering",
+    "compound_name": "Rhein",
+    "compound": "Rare anthraquinone compound",
+    "season": "Summer",
+    "temp": 28,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cassia%20fistula%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=12502&nologo=true&t=1786739444"
+  },
+  {
     "date": "2026-08-14 18:30",
     "city": "Istanbul",
     "country": "Turkey",
@@ -1483,20 +1498,5 @@
     "temp": 29,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Grapevine%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=47938&nologo=true&t=1786012240"
-  },
-  {
-    "date": "2026-08-06 08:30",
-    "city": "Bogota",
-    "country": "Colombia",
-    "latin": "Espeletia pycnophylla",
-    "common": "Frailejones",
-    "note": "Unfurling delicate white petals",
-    "phenology": "Flowering",
-    "compound_name": "Quercetin",
-    "compound": "Potent antioxidant properties present",
-    "season": "Summer",
-    "temp": 12,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Espeletia%20pycnophylla%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=71003&nologo=true&t=1786005040"
   }
 ]
