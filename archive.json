@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-14 12:30",
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "latin": "Dryas octopetala",
+    "common": "Mountain Avens",
+    "note": "Blooming under clear sky",
+    "phenology": "Flowering",
+    "compound_name": "Ellagic acid",
+    "compound": "Rare antioxidant properties",
+    "season": "Summer",
+    "temp": 13,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Mountain%20Avens%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=98638&nologo=true&t=1786710642"
+  },
+  {
     "date": "2026-08-14 10:30",
     "city": "Cairo",
     "country": "Egypt",
@@ -1483,20 +1498,5 @@
     "temp": 12,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Horsewood%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=12479&nologo=true&t=1785983439"
-  },
-  {
-    "date": "2026-08-06 00:30",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "latin": "Nerium oleander",
-    "common": "Oleander",
-    "note": "Blossoming in summer's warm haze",
-    "phenology": "Flowering",
-    "compound_name": "Oleandrin",
-    "compound": "Toxicity makes it highly potent",
-    "season": "Summer",
-    "temp": 24,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Nerium%20oleander%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=73262&nologo=true&t=1785976239"
   }
 ]
