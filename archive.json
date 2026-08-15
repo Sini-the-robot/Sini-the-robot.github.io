@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-15 14:30",
+    "city": "Vienna",
+    "country": "Austria",
+    "latin": "Melittis melissophyllum",
+    "common": "Bastard Balm",
+    "note": "Dancing in warm sunlight",
+    "phenology": "Flowering",
+    "compound_name": "Lamiin",
+    "compound": "Rare terpene with potent effects",
+    "season": "Summer",
+    "temp": 34,
+    "condition": "Clear sky",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Melittis%20melissophyllum%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=39020&nologo=true&t=1786804236"
+  },
+  {
     "date": "2026-08-15 12:30",
     "city": "Nairobi",
     "country": "Kenya",
@@ -1483,20 +1498,5 @@
     "temp": 31,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Platycodon%20grandiflorus%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=44213&nologo=true&t=1786091445"
-  },
-  {
-    "date": "2026-08-07 06:30",
-    "city": "Accra",
-    "country": "Ghana",
-    "latin": "Cassia alata",
-    "common": "Senna alata",
-    "note": "Unfurling golden petals slowly",
-    "phenology": "Flowering",
-    "compound_name": "Chrysophanic acid",
-    "compound": "Rare anthraquinone derivative",
-    "season": "Summer",
-    "temp": 24,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Senna%20alata%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=62714&nologo=true&t=1786084240"
   }
 ]
