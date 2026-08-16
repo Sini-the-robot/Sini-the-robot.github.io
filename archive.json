@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-16 04:30",
+    "city": "Oslo",
+    "country": "Norway",
+    "latin": "Taraxacum officinale",
+    "common": "Dandelion",
+    "note": "Blooming brightly in Oslo's summer",
+    "phenology": "Flowering",
+    "compound_name": "Taraxasterol",
+    "compound": "Rare triterpenoid with healing properties",
+    "season": "Summer",
+    "temp": 17,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dandelion%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=48268&nologo=true&t=1786854641"
+  },
+  {
     "date": "2026-08-16 02:30",
     "city": "Bangkok",
     "country": "Thailand",
@@ -1483,20 +1498,5 @@
     "temp": 15,
     "condition": "Clear sky",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cow%20Wheat%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=28093&nologo=true&t=1786141848"
-  },
-  {
-    "date": "2026-08-07 20:30",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "latin": "Lavandula stoechas",
-    "common": "Spanish lavender",
-    "note": "Unfurling purple blooms under warm sunlight",
-    "phenology": "Flowering",
-    "compound_name": "Linalool",
-    "compound": "Rare calming properties found naturally",
-    "season": "Summer",
-    "temp": 24,
-    "condition": "Partly cloudy",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Lavandula%20stoechas%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=73797&nologo=true&t=1786134641"
   }
 ]
