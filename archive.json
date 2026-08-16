@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-16 06:30",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "latin": "Dahlia variabilis",
+    "common": "Mexican Dahlia",
+    "note": "Unfurls vibrant blooms under cloudy skies",
+    "phenology": "Flowering",
+    "compound_name": "Inulin",
+    "compound": "Rare storage carbohydrate makes it powerful",
+    "season": "Summer",
+    "temp": 16,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Dahlia%20variabilis%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=42393&nologo=true&t=1786861838"
+  },
+  {
     "date": "2026-08-16 04:30",
     "city": "Oslo",
     "country": "Norway",
@@ -1483,20 +1498,5 @@
     "temp": 17,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Canterbury%20Bell%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=94219&nologo=true&t=1786149043"
-  },
-  {
-    "date": "2026-08-07 22:30",
-    "city": "Helsinki",
-    "country": "Finland",
-    "latin": "Melampyrum pratense",
-    "common": "Cow Wheat",
-    "note": "Blooming under clear skies",
-    "phenology": "Flowering",
-    "compound_name": "Iridoid",
-    "compound": "Rare due to complex synthesis",
-    "season": "Summer",
-    "temp": 15,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Fine%20botanical%20illustration%20of%20Cow%20Wheat%2C%20traditional%20ukiyo-e%20woodblock%20print%20style%2C%20natural%20botanical%20colors%2C%20precise%20ink%20outlines%2C%20ivory%20paper%20texture%2C%20full%20plant%20with%20stem%20leaves%20and%20flowers%2C%20botanically%20accurate%2C%20soft%20watercolor%20wash%2C%20no%20text%2C%20no%20labels%2C%20museum%20quality%20print?width=800&height=920&seed=28093&nologo=true&t=1786141848"
   }
 ]
