@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-19 12:30",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "latin": "Buddleja cordata",
+    "common": "Mexican Butterfly Bush",
+    "note": "Vibrant purple flowers attract pollinators in the cool summer air.",
+    "phenology": "Flowering",
+    "compound_name": "Luteolin",
+    "compound": "A rare flavonoid with antioxidant properties.",
+    "season": "Summer",
+    "temp": 12,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Mexican%20Butterfly%20Bush%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=14493&nologo=true&model=flux"
+  },
+  {
     "date": "2026-08-19 08:30",
     "city": "Sydney",
     "country": "Australia",
