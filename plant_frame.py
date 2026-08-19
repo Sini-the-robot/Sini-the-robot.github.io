@@ -92,7 +92,7 @@ Respond ONLY with valid JSON, no markdown, no extra text:
   "phenology": "Current stage (Flowering / Dormant / Fruiting / Budding / Seeding)",
   "compound_name": "Name of the key chemical compound (e.g. Thymol, Curcumin)",
   "compound": "One sentence max 12 words: what makes this compound rare or powerful",
-  "image_prompt": "Fine botanical illustration of [plant name], traditional ukiyo-e woodblock print style, natural botanical colors, precise ink outlines, ivory paper texture, full plant with stem leaves and flowers, botanically accurate, soft watercolor wash, no text, no labels, museum quality print"
+  "image_prompt": "Vintage botanical engraving of [plant name], 19th century naturalist illustration, hand-colored copper plate engraving, detailed scientific botanical drawing, fine crosshatching linework, aged parchment background, full specimen with roots stem leaves flowers, highly detailed, Pierre-Joseph Redoute style, no text, no labels"
 }}"""
 
     for attempt in range(3):
@@ -122,9 +122,8 @@ Respond ONLY with valid JSON, no markdown, no extra text:
 
 def get_image_url(image_prompt):
     encoded = quote(image_prompt)
-    seed = random.randint(1, 99999)
-    ts = int(datetime.now().timestamp())
-    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&t={ts}"
+    seed = abs(hash(image_prompt)) % 99999
+    return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&model=flux"
 
 def get_watermark_url():
     logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logo.svg")
