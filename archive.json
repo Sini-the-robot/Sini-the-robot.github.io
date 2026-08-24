@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-24 10:30",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "latin": "Ziziphus jujuba",
+    "common": "Jujube tree",
+    "note": "The jujube tree flourishes under the scorching summer sun.",
+    "phenology": "Fruiting",
+    "compound_name": "Flavonoids",
+    "compound": "Flavonoids have potent antioxidant properties.",
+    "season": "Summer",
+    "temp": 34,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Ziziphus%20jujuba%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=37785&nologo=true&model=flux"
+  },
+  {
     "date": "2026-08-24 08:31",
     "city": "Chengdu",
     "country": "China",
