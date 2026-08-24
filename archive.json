@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-24 06:30",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "latin": "Tanacetum vulgare",
+    "common": "Tansy",
+    "note": "Tansy blooms with bright yellow flowers in mid-summer's gentle warmth.",
+    "phenology": "Flowering",
+    "compound_name": "Thujone",
+    "compound": "Thujone's unique structure makes it a powerful neurotoxin and insecticide.",
+    "season": "Summer",
+    "temp": 15,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Tanacetum%20vulgare%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=1089&nologo=true&model=flux"
+  },
+  {
     "date": "2026-08-24 04:31",
     "city": "Addis Ababa",
     "country": "Ethiopia",
