@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-26 14:30",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "latin": "Cistus salviifolius",
+    "common": "Sage-leaved Rockrose",
+    "note": "Vibrant pink flowers unfolding under Istanbul's warm summer partly cloudy skies.",
+    "phenology": "Flowering",
+    "compound_name": "Cistus lactone",
+    "compound": "Rare labdane-type diterpene with antimicrobial and antifungal properties.",
+    "season": "Summer",
+    "temp": 28,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Cistus%20salviifolius%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=79871&nologo=true&model=flux"
+  },
+  {
     "date": "2026-08-26 12:30",
     "city": "Prague",
     "country": "Czech Republic",
