@@ -92,7 +92,7 @@ Respond ONLY with valid JSON, no markdown, no extra text:
   "phenology": "Current stage (Flowering / Dormant / Fruiting / Budding / Seeding)",
   "compound_name": "Name of the key chemical compound (e.g. Thymol, Curcumin)",
   "compound": "One sentence max 12 words: what makes this compound rare or powerful",
-  "image_prompt": "Vintage botanical engraving of [plant name], 19th century naturalist illustration, hand-colored copper plate engraving, detailed scientific botanical drawing, fine crosshatching linework, aged parchment background, full specimen with roots stem leaves flowers, highly detailed, Pierre-Joseph Redoute style, no text, no labels"
+  "image_prompt": "Create a scientifically informed botanical illustration of [plant name]. Before composing the image, identify and preserve the species' diagnostic morphology: natural growth habit, stem architecture, leaf type and arrangement, leaf shape and texture, flower or inflorescence structure, approximate relative scale, and any distinctive features that separate this species from generic foliage. The plant must be immediately recognizable as the named species. Show the complete natural specimen with believable proportions and a natural, species-typical silhouette. Traditional Japanese botanical painting aesthetic rather than Western engraving: delicate sumi-ink contour work, restrained hand-painted watercolor/mineral pigments, subtle washi paper texture, elegant negative space, quiet asymmetry, natural observation-study composition. Scientific morphology takes priority over decorative style. Do not invent foliage, change leaf arrangement, enlarge flowers, add exotic decorative leaves, or turn the plant into a generic ornamental specimen. No fantasy plant, no surrealism, no 3D render, no glossy photorealism, no dramatic studio lighting, no excessive detail that obscures morphology, no text, no labels."
 }}"""
 
     for attempt in range(3):
@@ -494,7 +494,7 @@ def run():
         plant = get_plant(city, country, lat, weather["temp"], weather["humidity"], weather["condition"], season)
         print(f"  Plant   : {plant['latin']} ({plant['common']})")
         print(f"  Compound: {plant.get('compound_name','—')}")
-        image_url = get_image_url(plant.get("image_prompt", f"botanical illustration of {plant['latin']}, ukiyo-e style"))
+        image_url = get_image_url(plant.get("image_prompt", f"""Scientifically informed botanical illustration of {plant['latin']}, preserving the species' diagnostic morphology, natural growth habit, characteristic stems, leaves and flowers, immediately recognizable as the named species. Traditional Japanese botanical painting with delicate sumi ink, restrained watercolor pigments, subtle washi paper texture, natural proportions, elegant negative space. Scientific accuracy over decoration. No fantasy foliage, no invented flowers, no generic ornamental plant, no surrealism, no 3D render, no text, no labels."""))
         print(f"  Image   : generating...")
         updated_at = datetime.now().strftime("%H:%M")
         html = build_html(city, country, weather, season, plant, image_url, updated_at)
