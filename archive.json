@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-02 00:30",
+    "city": "Lima",
+    "country": "Peru",
+    "latin": "Opuntia ficus-indica",
+    "common": "Prickly pear cactus",
+    "note": "Bright yellow Opuntia blossoms sway under Lima's gentle clouds.",
+    "phenology": "Flowering",
+    "compound_name": "Betalains",
+    "compound": "Betalains give vivid colors and strong antioxidant activity.",
+    "season": "Spring",
+    "temp": 20,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Create%20a%20scientifically%20informed%20botanical%20illustration%20of%20Opuntia%20ficus-indica.%20Before%20composing%20the%20image%2C%20identify%20and%20preserve%20the%20species%27%20diagnostic%20morphology%3A%20natural%20succulent%20growth%20habit%20forming%20flattened%2C%20jointed%20cladodes%2C%20stem%20architecture%20of%20ribbed%20pads%2C%20leaf%20type%20and%20arrangement%20reduced%20to%20spines%2C%20leaf%20shape%20and%20texture%20thick%2C%20waxy%2C%20and%20spiny%2C%20infloction%20structure%20solitary%20large%20funnel-shaped%20flowers%20with%20bright%20yellow%20petals%2C%20approximate%20relative%20scale%20showing%20pads%20up%20to%2030%E2%80%AFcm%2C%20and%20distinctive%20areoles%20with%20glochids%20separating%20it%20from%20generic%20cacti.%20The%20plant%20must%20be%20immediately%20recognizable%20as%20Opuntia%20ficus-indica.%20Show%20the%20complete%20natural%20specimen%20with%20believable%20proportions%20and%20a%20natural%2C%20species-typical%20silhouette.%20Traditional%20Japanese%20botanical%20painting%20aesthetic%20rather%20than%20Western%20engraving%3A%20delicate%20sumi-ink%20contour%20work%2C%20restrained%20hand-painted%20watercolor/mineral%20pigments%2C%20subtle%20washi%20paper%20texture%2C%20elegant%20negative%20space%2C%20quiet%20asymmetry%2C%20natural%20observation-study%20composition.%20Scientific%20morphology%20takes%20priority%20over%20decorative%20style.?width=800&height=920&seed=8954&nologo=true&model=flux"
+  },
+  {
     "date": "2026-09-01 22:30",
     "city": "Sydney",
     "country": "Australia",
@@ -1483,20 +1498,5 @@
     "temp": 15,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Tanacetum%20vulgare%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=1089&nologo=true&model=flux"
-  },
-  {
-    "date": "2026-08-24 04:31",
-    "city": "Addis Ababa",
-    "country": "Ethiopia",
-    "latin": "Hypericum revolutum",
-    "common": "Ethiopian St. John's Wort",
-    "note": "Vibrant yellow petals unfolding under the clear summer sky.",
-    "phenology": "Flowering",
-    "compound_name": "Hyperforin",
-    "compound": "Rare and powerful antidepressant with unique pharmacological properties.",
-    "season": "Summer",
-    "temp": 12,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Hypericum%20revolutum%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=51698&nologo=true&model=flux"
   }
 ]
