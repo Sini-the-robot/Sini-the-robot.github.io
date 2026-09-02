@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-02 04:30",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "latin": "Metrosideros excelsa",
+    "common": "Pōhutukawa",
+    "note": "Crimson blossoms blaze across its canopy, heralding Auckland's rebirth.",
+    "phenology": "Flowering",
+    "compound_name": "Myricetin",
+    "compound": "Myricetin provides potent antioxidant protection against UV stress.",
+    "season": "Spring",
+    "temp": 15,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Create%20a%20scientifically%20informed%20botanical%20illustration%20of%20P%C5%8Dhutukawa%20%28Metrosideros%20excelsa%29.%20Before%20composing%20the%20image%2C%20identify%20and%20preserve%20the%20species%27%20diagnostic%20morphology%3A%20natural%20spreading%2C%20umbrella%E2%80%91shaped%20growth%20habit%3B%20bark%20architecture%20with%20smooth%2C%20reddish%E2%80%91brown%20bark%3B%20leaf%20type%20and%20arrangement%20with%20opposite%2C%20leathery%2C%20elliptical%20leaves%20bearing%20a%20glossy%20surface%3B%20leaf%20shape%20and%20texture%20with%20entire%20margins%20and%20a%20slightly%20serrated%20tip%3B%20flower%20structure%20with%20dense%2C%20spherical%20inflorescences%20of%20numerous%20bright%20scarlet%2C%20tubular%20flowers%3B%20approximate%20relative%20scale%20showing%20mature%20trees%20up%20to%2015%E2%80%AFm%20tall%3B%20distinctive%20features%20such%20as%20the%20vivid%20red%20stamens%20and%20the%20flaky%20bark%20that%20separates%20it%20from%20generic%20foliage.%20The%20plant%20must%20be%20immediately%20recognizable%20as%20P%C5%8Dhutukawa.%20Show%20the%20complete%20natural%20specimen%20with%20believable%20proportions%20and%20a%20natural%2C%20species%E2%80%91typical%20silhouette.%20Traditional%20Japanese%20botanical%20painting%20aesthetic%20rather%20than%20Western%20engraving%3A%20delicate%20sumi%E2%80%91ink%20contour%20work%2C%20restrained%20hand%E2%80%91painted%20watercolor/mineral%20pigments%2C%20subtle%20washi%20paper%20texture%2C%20elegant%20negative%20space%2C%20quiet%20asymmetry%2C%20natural%20observation%E2%80%91study%20composition.%20Scientific%20morphology%20takes%20priority%20over%20decorative%20style.?width=800&height=920&seed=58648&nologo=true&model=flux"
+  },
+  {
     "date": "2026-09-02 02:30",
     "city": "Vienna",
     "country": "Austria",
@@ -1483,20 +1498,5 @@
     "temp": 34,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Ziziphus%20jujuba%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=37785&nologo=true&model=flux"
-  },
-  {
-    "date": "2026-08-24 08:31",
-    "city": "Chengdu",
-    "country": "China",
-    "latin": "Campsis grandiflora",
-    "common": "Chinese Trumpet Vine",
-    "note": "Vine rapidly climbing, showy orange-red flowers blooming profusely in summer heat.",
-    "phenology": "Flowering",
-    "compound_name": "Campsisin",
-    "compound": "Campsisin has antioxidant and anti-inflammatory properties, highly valued in traditional medicine.",
-    "season": "Summer",
-    "temp": 33,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Chinese%20Trumpet%20Vine%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=35981&nologo=true&model=flux"
   }
 ]
