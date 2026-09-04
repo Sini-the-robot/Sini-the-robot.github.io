@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-04 22:30",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "latin": "Quercus iberica",
+    "common": "Iberian Oak",
+    "note": "Leaves blaze amber, acorns mature, wind whispers through ancient Georgian hills.",
+    "phenology": "Fruiting",
+    "compound_name": "Quercetin",
+    "compound": "Strong antioxidant, anti-inflammatory, abundant in oak bark and leaves.",
+    "season": "Autumn",
+    "temp": 22,
+    "condition": "Partly cloudy",
+    "image_url": "https://image.pollinations.ai/prompt/Create%20a%20scientifically%20informed%20botanical%20illustration%20of%20Iberian%20Oak%20%28Quercus%20iberica%29.%20Before%20composing%20the%20image%2C%20identify%20and%20preserve%20the%20species%27%20diagnostic%20morphology%3A%20natural%20growth%20habit%2C%20stem%20architecture%2C%20leaf%20type%20and%20arrangement%2C%20leaf%20shape%20and%20texture%2C%20flower%20or%20inflorescence%20structure%2C%20approximate%20relative%20scale%2C%20and%20any%20distinctive%20features%20that%20separate%20this%20species%20from%20generic%20foliage.%20The%20plant%20must%20be%20immediately%20recognizable%20as%20the%20named%20species.%20Show%20the%20complete%20natural%20specimen%20with%20believable%20proportions%20and%20a%20natural%2C%20species-typical%20silhouette.%20Traditional%20Japanese%20botanical%20painting%20aesthetic%20rather%20than%20Western%20engraving%3A%20delicate%20sumi-ink%20contour%20work%2C%20restrained%20hand-painted%20watercolor/mineral%20pigments%2C%20subtle%20washi%20paper%20texture%2C%20elegant%20negative%20space%2C%20quiet%20asymmetry%2C%20natural%20observation-study%20composition.%20Scientific%20morphology%20takes%20priority%20over%20decorative%20style.%20Do%20not%20invent%20foliage%2C%20change%20leaf%20arrangement%2C%20enlarge%20flowers%2C%20add%20exotic%20decorative%20leaves%2C%20or%20turn%20the%20plant%20into%20a%20generic%20ornamental%20specimen.%20No%20fantasy%20plant%2C%20no%20surrealism%2C%20no%203D%20render%2C%20no%20glossy%20photorealism%2C%20no%20dramatic%20studio%20lighting%2C%20no%20excessive%20detail%20that%20obscures%20morphology%2C%20no%20text%2C%20no%20labels.?width=800&height=920&seed=60537&nologo=true&model=flux"
+  },
+  {
     "date": "2026-09-04 20:30",
     "city": "Cairo",
     "country": "Egypt",
@@ -1483,20 +1498,5 @@
     "temp": 28,
     "condition": "Partly cloudy",
     "image_url": "https://image.pollinations.ai/prompt/Create%20a%20scientifically%20informed%20botanical%20illustration%20of%20Yellow%20Sweetclover%20%28Melilotus%20officinalis%29.%20Before%20composing%20the%20image%2C%20identify%20and%20preserve%20the%20species%27%20diagnostic%20morphology%3A%20natural%20growth%20habit%2C%20stem%20architecture%2C%20leaf%20type%20and%20arrangement%2C%20leaf%20shape%20and%20texture%2C%20flower%20or%20inflorescence%20structure%2C%20approximate%20relative%20scale%2C%20and%20any%20distinctive%20features%20that%20separate%20this%20species%20from%20generic%20foliage.%20The%20plant%20must%20be%20immediately%20recognizable%20as%20the%20named%20species.%20Show%20the%20complete%20natural%20specimen%20with%20believable%20proportions%20and%20a%20natural%2C%20species-typical%20silhouette.%20Traditional%20Japanese%20botanical%20painting%20aesthetic%20rather%20than%20Western%20engraving%3A%20delicate%20sumi-ink%20contour%20work%2C%20restrained%20hand-painted%20watercolor/mineral%20pigments%2C%20subtle%20washi%20paper%20texture%2C%20elegant%20negative%20space%2C%20quiet%20asymmetry%2C%20natural%20observation-study%20composition.%20Scientific%20morphology%20takes%20priority%20over%20decorative%20style.%20Do%20not%20invent%20foliage%2C%20change%20leaf%20arrangement%2C%20enlarge%20flowers%2C%20add%20exotic%20decorative%20leaves%2C%20or%20turn%20the%20plant%20into%20a%20generic%20ornamental%20specimen.%20No%20fantasy%20plant%2C%20no%20surrealism%2C%20no%203D%20render%2C%20no%20glossy%20photorealism%2C%20no%20dramatic%20studio%20lighting%2C%20no%20excessive%20detail%20that%20obscures%20morphology%2C%20no%20text%2C%20no%20labels.?width=800&height=920&seed=74134&nologo=true&model=flux"
-  },
-  {
-    "date": "2026-08-27 14:30",
-    "city": "Cairo",
-    "country": "Egypt",
-    "latin": "Zygophyllum simplex",
-    "common": "Simplex twinleaf",
-    "note": "Simplex twinleaf thrives under scorching Cairo sun with minimal water.",
-    "phenology": "Flowering",
-    "compound_name": "Quercetin",
-    "compound": "Quercetin is a powerful antioxidant found in various plant species.",
-    "season": "Summer",
-    "temp": 39,
-    "condition": "Clear sky",
-    "image_url": "https://image.pollinations.ai/prompt/Vintage%20botanical%20engraving%20of%20Zygophyllum%20simplex%2C%2019th%20century%20naturalist%20illustration%2C%20hand-colored%20copper%20plate%20engraving%2C%20detailed%20scientific%20botanical%20drawing%2C%20fine%20crosshatching%20linework%2C%20aged%20parchment%20background%2C%20full%20specimen%20with%20roots%20stem%20leaves%20flowers%2C%20highly%20detailed%2C%20Pierre-Joseph%20Redoute%20style%2C%20no%20text%2C%20no%20labels?width=800&height=920&seed=81245&nologo=true&model=flux"
   }
 ]
