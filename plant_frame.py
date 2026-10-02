@@ -123,6 +123,9 @@ Respond ONLY with valid JSON, no markdown, no extra text:
 def get_image_url(image_prompt):
     encoded = quote(image_prompt)
     seed = abs(hash(image_prompt)) % 99999
+    token = os.environ.get("POLLINATIONS_API_KEY", "")
+    if token:
+        return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&model=flux&token={token}"
     return f"https://image.pollinations.ai/prompt/{encoded}?width=800&height=920&seed={seed}&nologo=true&model=flux"
 
 def get_watermark_url():
